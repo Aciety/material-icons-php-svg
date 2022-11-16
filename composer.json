@@ -1,6 +1,7 @@
 {
     "name": "aciety/material-icons",
     "type": "library",
+    "license": "MIT",
     "description": "Material Icons in PHP as SVG Objects",
     "require": {
         "php": "^8.1",
