@@ -21,6 +21,11 @@ parameters:
 			path: bin/build.php
 
 		-
+			message: "#^Parameter \\#1 \\$patterns of method Symfony\\\\Component\\\\Finder\\\\Finder\\:\\:name\\(\\) expects array\\<string\\>\\|string, array given\\.$#"
+			count: 1
+			path: src/Tool/Composer.php
+
+		-
 			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
 			count: 2
 			path: src/Tool/IconBuilder.php

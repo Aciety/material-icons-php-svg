@@ -10,6 +10,7 @@
         "meyfa/php-svg": "^0.11.3"
     },
     "require-dev": {
+        "composer/composer": "^2.4",
         "friendsofphp/php-cs-fixer": "^3.13",
         "mikey179/vfsstream": "^1.6",
         "phpstan/phpstan": "^1.9",
