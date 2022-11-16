@@ -1,0 +1,39 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Shapes\SVGRect;
+use SVG\Nodes\Structures\SVGGroup;
+use SVG\SVG;
+
+final class FlipCameraAndroidRoundedIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGGroup();
+        $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
+        $l1I0->setStyle('fill', 'none');
+        $l0I0->addChild($l1I0);
+        $l1I1 = new SVGRect(x: null, y: null, width: '24', height: '24');
+        $l1I1->setStyle('fill', 'none');
+        $l0I0->addChild($l1I1);
+        $doc->addChild($l0I0);
+        $l0I1 = new SVGGroup();
+        $l1I0 = new SVGGroup();
+        $l2I0 = new SVGPath(d: 'M9,12c0,1.66,1.34,3,3,3s3-1.34,3-3s-1.34-3-3-3S9,10.34,9,12z');
+        $l1I0->addChild($l2I0);
+        $l2I1 = new SVGPath(d: 'M8,9L8,9c0-0.55-0.45-1-1-1H5.09C6.47,5.61,9.05,4,12,4c3.49,0,6.45,2.24,7.54,5.36C19.68,9.75,20.07,10,20.48,10h0 c0.68,0,1.18-0.67,0.96-1.31C20.07,4.79,16.36,2,12,2C8.73,2,5.82,3.58,4,6.01V5c0-0.55-0.45-1-1-1h0C2.45,4,2,4.45,2,5v4 c0,0.55,0.45,1,1,1h4C7.55,10,8,9.55,8,9z');
+        $l1I0->addChild($l2I1);
+        $l2I2 = new SVGPath(d: 'M16,15L16,15c0,0.55,0.45,1,1,1h1.91c-1.38,2.39-3.96,4-6.91,4c-3.49,0-6.45-2.24-7.54-5.36C4.32,14.25,3.93,14,3.52,14h0 c-0.68,0-1.18,0.67-0.96,1.31C3.93,19.21,7.64,22,12,22c3.27,0,6.18-1.58,8-4.01V19c0,0.55,0.45,1,1,1h0c0.55,0,1-0.45,1-1v-4 c0-0.55-0.45-1-1-1h-4C16.45,14,16,14.45,16,15z');
+        $l1I0->addChild($l2I2);
+        $l0I1->addChild($l1I0);
+        $doc->addChild($l0I1);
+    }
+}

@@ -1,0 +1,29 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Structures\SVGGroup;
+use SVG\SVG;
+
+final class CreditScoreSharpIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGGroup();
+        $l1I0 = new SVGPath(d: 'M0,0h24v24H0V0z');
+        $l1I0->setStyle('fill', 'none');
+        $l0I0->addChild($l1I0);
+        $doc->addChild($l0I0);
+        $l0I1 = new SVGGroup();
+        $l1I0 = new SVGPath(d: 'M2,4v16h7v-2H4v-6h18V4H2z M20,8H4V6h16V8z M14.93,19.17l-2.83-2.83l-1.41,1.41L14.93,22L22,14.93l-1.41-1.41L14.93,19.17z');
+        $l0I1->addChild($l1I0);
+        $doc->addChild($l0I1);
+    }
+}

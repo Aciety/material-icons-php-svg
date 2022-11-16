@@ -1,0 +1,88 @@
+)]}'
+{
+  "host": "fonts.gstatic.com",
+  "asset_url_pattern": "/s/i/{family}/{icon}/v{version}/{asset}",
+  "families": [
+    "Material Icons",
+    "Material Icons Outlined",
+    "Material Icons Round",
+    "Material Icons Sharp",
+    "Material Icons Two Tone"
+  ],
+  "icons": [
+    {
+      "name": "1k",
+      "version": 10,
+      "popularity": 774,
+      "codepoint": 59740,
+      "unsupported_families": [],
+      "categories": [
+        "av"
+      ],
+      "tags": [
+        "1000",
+        "1K",
+        "alphabet",
+        "character",
+        "digit",
+        "display",
+        "font",
+        "letter",
+        "number",
+        "pixel",
+        "pixels",
+        "resolution",
+        "symbol",
+        "text",
+        "type",
+        "video"
+      ],
+      "sizes_px": [
+        24
+      ]
+    },
+    {
+      "name": "signal_wifi_statusbar_connected_no_internet_4",
+      "version": 11,
+      "popularity": 3573,
+      "codepoint": 61542,
+      "unsupported_families": [],
+      "categories": [
+        "device"
+      ],
+      "tags": [
+        "!",
+        "4",
+        "alert",
+        "attention",
+        "caution",
+        "cell",
+        "cellular",
+        "connected",
+        "danger",
+        "data",
+        "error",
+        "exclamation",
+        "important",
+        "internet",
+        "mark",
+        "mobile",
+        "network",
+        "no",
+        "notification",
+        "phone",
+        "signal",
+        "speed",
+        "statusbar",
+        "symbol",
+        "warning",
+        "wifi",
+        "wireless"
+      ],
+      "sizes_px": [
+        20,
+        24
+      ]
+    }
+  ]
+}

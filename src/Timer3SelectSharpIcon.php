@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Shapes\SVGRect;
+use SVG\SVG;
+
+final class Timer3SelectSharpIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
+        $l0I0->setStyle('fill', 'none');
+        $doc->addChild($l0I0);
+        $l0I1 = new SVGPath(d: 'M21,11v2h-4v1h4v5h-6v-2h4v-1h-4v-5H21z M4,5v3h6v2.5H4v3h6V16H4v3h9V5H4z');
+        $doc->addChild($l0I1);
+    }
+}

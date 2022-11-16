@@ -1,0 +1,28 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Shapes\SVGRect;
+use SVG\Nodes\Structures\SVGGroup;
+use SVG\SVG;
+
+final class ArrowCircleUpRoundedIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGGroup();
+        $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
+        $l1I0->setStyle('fill', 'none');
+        $l0I0->addChild($l1I0);
+        $l1I1 = new SVGPath(d: 'M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20 M12,22c5.52,0,10-4.48,10-10c0-5.52-4.48-10-10-10 C6.48,2,2,6.48,2,12C2,17.52,6.48,22,12,22L12,22z M11,12l0,3c0,0.55,0.45,1,1,1h0c0.55,0,1-0.45,1-1l0-3h1.79 c0.45,0,0.67-0.54,0.35-0.85l-2.79-2.79c-0.2-0.2-0.51-0.2-0.71,0l-2.79,2.79C8.54,11.46,8.76,12,9.21,12H11z');
+        $l0I0->addChild($l1I1);
+        $doc->addChild($l0I0);
+    }
+}

@@ -1,0 +1,21 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\SVG;
+
+final class EqualizerRoundedIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGPath(d: 'M12 20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 1.1.9 2 2 2zm-6 0c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4c0 1.1.9 2 2 2zm10-9v7c0 1.1.9 2 2 2s2-.9 2-2v-7c0-1.1-.9-2-2-2s-2 .9-2 2z');
+        $doc->addChild($l0I0);
+    }
+}

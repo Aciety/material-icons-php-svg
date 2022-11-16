@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Structures\SVGGroup;
+use SVG\SVG;
+
+final class SummarizeRoundedIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGGroup();
+        $l1I0 = new SVGPath(d: 'M0,0h24v24H0V0z');
+        $l1I0->setStyle('fill', 'none');
+        $l0I0->addChild($l1I0);
+        $doc->addChild($l0I0);
+        $l0I1 = new SVGGroup();
+        $l1I0 = new SVGGroup();
+        $l2I0 = new SVGPath(d: 'M15.59,3.59C15.21,3.21,14.7,3,14.17,3H5C3.9,3,3.01,3.9,3.01,5L3,19c0,1.1,0.89,2,1.99,2H19c1.1,0,2-0.9,2-2V9.83 c0-0.53-0.21-1.04-0.59-1.41L15.59,3.59z M8,17c-0.55,0-1-0.45-1-1s0.45-1,1-1s1,0.45,1,1S8.55,17,8,17z M8,13c-0.55,0-1-0.45-1-1 s0.45-1,1-1s1,0.45,1,1S8.55,13,8,13z M8,9C7.45,9,7,8.55,7,8s0.45-1,1-1s1,0.45,1,1S8.55,9,8,9z M14,9V4.5l5.5,5.5H15 C14.45,10,14,9.55,14,9z');
+        $l1I0->addChild($l2I0);
+        $l0I1->addChild($l1I0);
+        $doc->addChild($l0I1);
+    }
+}

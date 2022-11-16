@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Aciety\Component\MaterialIcons;
+
+use SVG\Nodes\Shapes\SVGPath;
+use SVG\Nodes\Shapes\SVGRect;
+use SVG\Nodes\Structures\SVGGroup;
+use SVG\SVG;
+
+final class PolicyTwoToneIcon extends SVG
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $doc = $this->getDocument();
+        $doc->setAttribute('viewBox', '0 0 24 24');
+        $l0I0 = new SVGGroup();
+        $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
+        $l1I0->setStyle('fill', 'none');
+        $l0I0->addChild($l1I0);
+        $doc->addChild($l0I0);
+        $l0I1 = new SVGGroup();
+        $l1I0 = new SVGGroup();
+        $l0I1->addChild($l1I0);
+        $l1I1 = new SVGGroup();
+        $l2I0 = new SVGPath(d: 'M5,6.3V11c0,4.52,2.98,8.69,7,9.93c1.74-0.53,3.28-1.62,4.47-3.04l-1.72-1.72 c-1.94,1.29-4.58,1.07-6.29-0.64c-1.95-1.95-1.95-5.12,0-7.07c1.95-1.95,5.12-1.95,7.07,0c1.71,1.71,1.92,4.35,0.64,6.29 l1.45,1.45C18.49,14.65,19,12.85,19,11V6.3l-7-3.11L5,6.3z');
+        $l2I0->setStyle('opacity', '.3');
+        $l1I1->addChild($l2I0);
+        $l2I1 = new SVGPath(d: 'M12,1L3,5v6c0,5.55,3.84,10.74,9,12c0.65-0.16,1.27-0.38,1.87-0.65c1.8-0.82,3.36-2.13,4.57-3.74 C20.04,16.46,21,13.77,21,11V5L12,1z M19,11c0,1.85-0.51,3.65-1.38,5.21l-1.45-1.45c1.29-1.94,1.07-4.58-0.64-6.29 c-1.95-1.95-5.12-1.95-7.07,0c-1.95,1.95-1.95,5.12,0,7.07c1.71,1.71,4.35,1.92,6.29,0.64l1.72,1.72 c-1.19,1.42-2.73,2.51-4.47,3.04C7.98,19.69,5,15.52,5,11V6.3l7-3.11l7,3.11V11z M15,12c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3 S15,10.34,15,12z');
+        $l1I1->addChild($l2I1);
+        $l0I1->addChild($l1I1);
+        $doc->addChild($l0I1);
+    }
+}

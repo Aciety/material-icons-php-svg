@@ -1,0 +1,51 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method getPathname\\(\\) on mixed\\.$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^Parameter \\#1 \\$file of method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\MuiFilenameRewriter\\:\\:rewrite\\(\\) expects SplFileInfo, mixed given\\.$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^Parameter \\#1 \\$files of method Symfony\\\\Component\\\\Filesystem\\\\Filesystem\\:\\:remove\\(\\) expects iterable\\|string, array\\<int, string\\>\\|false given\\.$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^Parameter \\#2 \\$iconName of method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:build\\(\\) expects non\\-empty\\-string, string given\\.$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 2
+			path: src/Tool/IconBuilder.php
+
+		-
+			message: "#^Method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:normalizePoints\\(\\) should return non\\-empty\\-string but returns string\\.$#"
+			count: 1
+			path: src/Tool/IconBuilder.php
+
+		-
+			message: "#^Parameter \\#1 \\$points of static method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:normalizePoints\\(\\) expects list\\<array\\{float\\|int, float\\|int\\}\\>, array\\<array\\> given\\.$#"
+			count: 2
+			path: src/Tool/IconBuilder.php
+
+		-
+			message: "#^Strict comparison using \\!\\=\\= between string and null will always evaluate to true\\.$#"
+			count: 2
+			path: src/Tool/IconBuilder.php
+
+		-
+			message: "#^Method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconPhpTemplate\\:\\:getOutput\\(\\) should return non\\-empty\\-string but returns string\\.$#"
+			count: 1
+			path: src/Tool/IconPhpTemplate.php
+
+		-
+			message: "#^Parameter \\#2 \\$iconName of method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:build\\(\\) expects non\\-empty\\-string, string given\\.$#"
+			count: 1
+			path: tests/Tool/IconBuilderTest.php
