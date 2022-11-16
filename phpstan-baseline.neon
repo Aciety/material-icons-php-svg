@@ -41,11 +41,6 @@ parameters:
 			path: src/Tool/IconBuilder.php
 
 		-
-			message: "#^Method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconPhpTemplate\\:\\:getOutput\\(\\) should return non\\-empty\\-string but returns string\\.$#"
-			count: 1
-			path: src/Tool/IconPhpTemplate.php
-
-		-
 			message: "#^Parameter \\#2 \\$iconName of method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:build\\(\\) expects non\\-empty\\-string, string given\\.$#"
 			count: 1
 			path: tests/Tool/IconBuilderTest.php
