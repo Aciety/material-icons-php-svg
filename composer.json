@@ -1,4 +1,7 @@
 {
+    "name": "aciety/material-icons",
+    "type": "library",
+    "description": "Material Icons in PHP as SVG Objects",
     "require": {
         "php": "^8.1",
         "ext-json": "*",
