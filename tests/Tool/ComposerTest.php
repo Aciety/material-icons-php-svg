@@ -34,7 +34,7 @@ final class ComposerTest extends TestCase
         $c3->addChild(new vfsStreamFile('AbcSharpIcon.php'));
         $c3->addChild(new vfsStreamFile('AbcTwoToneIcon.php'));
         $c4->addChild(new vfsStreamFile('AbcRoundedIcon.php'));
-        $this->vendorDir = vfsStreamWrapper::getRoot()->url();
+        $this->vendorDir = $vendorDir->url();
         $this->srcDir = $c3;
     }
 
@@ -44,6 +44,9 @@ final class ComposerTest extends TestCase
     }
 
     /**
+     * @param array{'aciety/material-icons'?: array{exclude?: list<string>}} $extra
+     * @param list<string>                                                   $expectedFiles
+     *
      * @dataProvider provideTestCases
      */
     public function testCleanup(array $extra, array $expectedFiles, ?string $expectedIoWrite): void
@@ -81,6 +84,9 @@ final class ComposerTest extends TestCase
         }
     }
 
+    /**
+     * @return iterable<array{extra: array{'aciety/material-icons'?: array{exclude?: list<string>}}, expectedFiles: list<string>, expectedIoWrite: string|null}>
+     */
     public function provideTestCases(): iterable
     {
         yield [
