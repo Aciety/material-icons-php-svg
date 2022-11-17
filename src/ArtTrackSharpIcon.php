@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['album', 'art', 'artist', 'audio', 'image', 'music', 'photo', 'photography', 'picture', 'sound', 'track', 'tracks'],
+)]
 final class ArtTrackSharpIcon extends SVG
 {
     public function __construct()

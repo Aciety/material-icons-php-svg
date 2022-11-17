@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['add', 'baked', 'birthday', 'cake', 'candles', 'celebration', 'dessert', 'food', 'frosting', 'new', 'party', 'pastries', 'pastry', 'plus', 'social', 'sweet', 'symbol'],
+)]
 final class CakeOutlinedIcon extends SVG
 {
     public function __construct()

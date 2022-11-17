@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['chairs', 'deck', 'home', 'house', 'outdoors', 'outside', 'patio', 'social', 'terrace', 'umbrella', 'yard'],
+)]
 final class DeckSharpIcon extends SVG
 {
     public function __construct()

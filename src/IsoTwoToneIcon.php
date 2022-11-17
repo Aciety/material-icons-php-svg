@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['add', 'edit', 'editing', 'effect', 'image', 'iso', 'minus', 'photography', 'picture', 'plus', 'sensor', 'shutter', 'speed', 'subtract'],
+)]
 final class IsoTwoToneIcon extends SVG
 {
     public function __construct()

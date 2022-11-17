@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['bath', 'bathing', 'bathroom', 'bathtub', 'hot', 'hotel', 'human', 'jacuzzi', 'person', 'shower', 'spa', 'steam', 'travel', 'tub', 'water'],
+)]
 final class HotTubTwoToneIcon extends SVG
 {
     public function __construct()

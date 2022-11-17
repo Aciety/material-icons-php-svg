@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['border', 'edit', 'editing', 'filter', 'gradient', 'image', 'photo', 'photography', 'setting', 'vignette'],
+)]
 final class VignetteOutlinedIcon extends SVG
 {
     public function __construct()

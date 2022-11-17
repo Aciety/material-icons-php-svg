@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['blur', 'disabled', 'dots', 'edit', 'editing', 'effect', 'enabled', 'enhance', 'filter', 'off', 'on', 'slash'],
+)]
 final class BlurOnIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['toggle'],
+    tags: ['app', 'application', 'box', 'button', 'check', 'components', 'control', 'design', 'form', 'indeterminate', 'interface', 'screen', 'select', 'selected', 'selection', 'site', 'square', 'toggle', 'ui', 'undetermined', 'ux', 'web', 'website'],
+)]
 final class IndeterminateCheckBoxRoundedIcon extends SVG
 {
     public function __construct()

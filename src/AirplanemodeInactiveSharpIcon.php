@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['airplane', 'airplanemode', 'airport', 'disabled', 'enabled', 'flight', 'fly', 'inactive', 'maps', 'mode', 'off', 'offline', 'on', 'slash', 'transportation', 'travel'],
+)]
 final class AirplanemodeInactiveSharpIcon extends SVG
 {
     public function __construct()

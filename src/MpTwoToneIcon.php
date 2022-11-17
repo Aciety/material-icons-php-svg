@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['alphabet', 'character', 'font', 'image', 'letter', 'megapixel', 'mp', 'photo', 'photography', 'pixels', 'quality', 'resolution', 'symbol', 'text', 'type'],
+)]
 final class MpTwoToneIcon extends SVG
 {
     public function __construct()

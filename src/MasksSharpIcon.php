@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['air', 'cover', 'covid', 'face', 'hospital', 'masks', 'medical', 'pollution', 'protection', 'respirator', 'sick', 'social'],
+)]
 final class MasksSharpIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['doc', 'edit', 'editing', 'editor', 'format', 'quotation', 'quote', 'sheet', 'spreadsheet', 'text', 'type', 'writing'],
+)]
 final class FormatQuoteIcon extends SVG
 {
     public function __construct()

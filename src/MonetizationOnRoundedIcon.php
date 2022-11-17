@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['bill', 'card', 'cash', 'circle', 'coin', 'commerce', 'cost', 'credit', 'currency', 'dollars', 'finance', 'monetization', 'money', 'on', 'online', 'pay', 'payment', 'shopping', 'symbol'],
+)]
 final class MonetizationOnRoundedIcon extends SVG
 {
     public function __construct()

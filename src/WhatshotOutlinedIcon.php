@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['arrow', 'circle', 'direction', 'fire', 'frames', 'hot', 'round', 'whatshot'],
+)]
 final class WhatshotOutlinedIcon extends SVG
 {
     public function __construct()

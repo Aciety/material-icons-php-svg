@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['active', 'alarm', 'alert', 'bell', 'chime', 'circle', 'notifications', 'notify', 'reminder', 'ring', 'sound'],
+)]
 final class CircleNotificationsOutlinedIcon extends SVG
 {
     public function __construct()

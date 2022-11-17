@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['finger', 'fingerprint', 'id', 'identification', 'identity', 'print', 'reader', 'thumbprint', 'verification'],
+)]
 final class FingerprintOutlinedIcon extends SVG
 {
     public function __construct()

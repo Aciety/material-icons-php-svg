@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['add', 'brightness', 'contrast', 'edit', 'editing', 'effect', 'exposure', 'image', 'minus', 'photo', 'photography', 'picture', 'plus', 'settings', 'subtract'],
+)]
 final class ExposureTwoToneIcon extends SVG
 {
     public function __construct()

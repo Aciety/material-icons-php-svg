@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['body', 'camera', 'front', 'human', 'lens', 'mobile', 'person', 'phone', 'photography', 'portrait', 'selfie'],
+)]
 final class CameraFrontOutlinedIcon extends SVG
 {
     public function __construct()

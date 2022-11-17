@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['home'],
+    tags: ['bolt', 'electric', 'energy', 'fast', 'lightning', 'measure', 'meter', 'nest', 'thunderbolt', 'usage', 'voltage', 'volts'],
+)]
 final class ElectricMeterOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['4', 'bar', 'cell', 'cellular', 'data', 'internet', 'lock', 'locked', 'mobile', 'network', 'password', 'phone', 'privacy', 'private', 'protection', 'safety', 'secure', 'security', 'signal', 'wifi', 'wireless'],
+)]
 final class SignalWifi4BarLockTwoToneIcon extends SVG
 {
     public function __construct()

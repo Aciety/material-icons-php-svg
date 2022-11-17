@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bubble', 'call', 'cell', 'chat', 'comment', 'communicate', 'contact', 'device', 'message', 'msg', 'perm', 'phone', 'recording', 'speech', 'telephone', 'voice'],
+)]
 final class PermPhoneMsgOutlinedIcon extends SVG
 {
     public function __construct()

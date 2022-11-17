@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'arrow', 'device', 'export', 'forward', 'hardware', 'iOS', 'mobile', 'phone', 'right', 'send', 'share', 'tablet', 'to'],
+)]
 final class SendToMobileIcon extends SVG
 {
     public function __construct()

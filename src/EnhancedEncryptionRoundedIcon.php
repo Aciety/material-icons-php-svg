@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['+', 'add', 'encryption', 'enhanced', 'lock', 'locked', 'new', 'password', 'plus', 'privacy', 'private', 'protection', 'safety', 'secure', 'security', 'symbol'],
+)]
 final class EnhancedEncryptionRoundedIcon extends SVG
 {
     public function __construct()

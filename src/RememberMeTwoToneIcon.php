@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'avatar', 'device', 'hardware', 'human', 'iOS', 'identity', 'me', 'mobile', 'people', 'person', 'phone', 'profile', 'remember', 'tablet', 'user'],
+)]
 final class RememberMeTwoToneIcon extends SVG
 {
     public function __construct()

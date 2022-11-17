@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['action', 'alert', 'bar', 'call', 'components', 'cta', 'design', 'info', 'information', 'interface', 'layout', 'message', 'notification', 'screen', 'site', 'to', 'ui', 'ux', 'web', 'website', 'window'],
+)]
 final class CallToActionRoundedIcon extends SVG
 {
     public function __construct()

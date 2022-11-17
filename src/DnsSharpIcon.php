@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['address', 'bars', 'dns', 'domain', 'information', 'ip', 'list', 'lookup', 'name', 'server', 'system'],
+)]
 final class DnsSharpIcon extends SVG
 {
     public function __construct()

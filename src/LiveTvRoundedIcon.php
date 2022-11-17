@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['Android', 'OS', 'antennas hardware', 'chrome', 'desktop', 'device', 'iOS', 'live', 'mac', 'monitor', 'movie', 'play', 'stream', 'television', 'tv', 'web', 'window'],
+)]
 final class LiveTvRoundedIcon extends SVG
 {
     public function __construct()

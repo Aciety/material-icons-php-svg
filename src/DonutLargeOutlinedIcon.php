@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['analytics', 'chart', 'data', 'diagram', 'donut', 'graph', 'infographic', 'inprogress', 'large', 'measure', 'metrics', 'pie', 'statistics', 'tracking'],
+)]
 final class DonutLargeOutlinedIcon extends SVG
 {
     public function __construct()

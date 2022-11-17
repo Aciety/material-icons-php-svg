@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['account', 'emoji', 'emoticon', 'face', 'happy', 'human', 'insert', 'people', 'person', 'profile', 'sentiment', 'smile', 'user'],
+)]
 final class InsertEmoticonSharpIcon extends SVG
 {
     public function __construct()

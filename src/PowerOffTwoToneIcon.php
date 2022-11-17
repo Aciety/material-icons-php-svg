@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['charge', 'cord', 'disabled', 'electric', 'electrical', 'enabled', 'off', 'on', 'outlet', 'plug', 'power', 'slash'],
+)]
 final class PowerOffTwoToneIcon extends SVG
 {
     public function __construct()

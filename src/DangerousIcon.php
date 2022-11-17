@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['broken', 'danger', 'dangerous', 'fix', 'no', 'sign', 'stop', 'update', 'warning', 'wrong', 'x'],
+)]
 final class DangerousIcon extends SVG
 {
     public function __construct()

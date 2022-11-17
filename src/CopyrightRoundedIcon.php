@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['alphabet', 'c', 'character', 'copyright', 'emblem', 'font', 'legal', 'letter', 'owner', 'symbol', 'text'],
+)]
 final class CopyrightRoundedIcon extends SVG
 {
     public function __construct()

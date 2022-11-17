@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['blur', 'camera', 'dim', 'dot', 'effect', 'foggy', 'fuzzy', 'image', 'lens', 'photo', 'soften'],
+)]
 final class LensBlurOutlinedIcon extends SVG
 {
     public function __construct()

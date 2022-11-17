@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['doctor', 'drug', 'emergency', 'hospital', 'medication', 'medicine', 'pharmacy', 'pills', 'prescription'],
+)]
 final class MedicationRoundedIcon extends SVG
 {
     public function __construct()

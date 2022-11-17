@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['army', 'award', 'badge', 'honor', 'medal', 'merit', 'military', 'order', 'privilege', 'prize', 'rank', 'reward', 'ribbon', 'soldier', 'star', 'status', 'tech', 'trophy', 'win', 'winner'],
+)]
 final class MilitaryTechTwoToneIcon extends SVG
 {
     public function __construct()

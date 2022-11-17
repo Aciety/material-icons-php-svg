@@ -11,4 +11,5 @@ phpstan.neon
 .phpunit.result.cache
 phpunit.xml
 
-/icons/*.svg
+/icons/*
+!/icons/custom

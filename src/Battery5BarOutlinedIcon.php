@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['5', 'bar', 'battery', 'cell', 'charge', 'mobile', 'power'],
+)]
 final class Battery5BarOutlinedIcon extends SVG
 {
     public function __construct()

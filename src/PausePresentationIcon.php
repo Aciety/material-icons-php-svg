@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['app', 'application desktop', 'device', 'pause', 'present', 'presentation', 'screen', 'share', 'site', 'slides', 'web', 'website', 'window', 'www'],
+)]
 final class PausePresentationIcon extends SVG
 {
     public function __construct()

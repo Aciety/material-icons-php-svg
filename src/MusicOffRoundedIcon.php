@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['audio', 'audiotrack', 'disabled', 'enabled', 'key', 'music', 'note', 'off', 'on', 'slash', 'sound', 'track'],
+)]
 final class MusicOffRoundedIcon extends SVG
 {
     public function __construct()

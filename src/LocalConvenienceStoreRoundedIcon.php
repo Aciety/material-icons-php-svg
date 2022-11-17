@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['--', '24', 'bill', 'building', 'business', 'card', 'cash', 'coin', 'commerce', 'company', 'convenience', 'credit', 'currency', 'dollars', 'local', 'maps', 'market', 'money', 'new', 'online', 'pay', 'payment', 'plus', 'shop', 'shopping', 'store', 'storefront', 'symbol'],
+)]
 final class LocalConvenienceStoreRoundedIcon extends SVG
 {
     public function __construct()

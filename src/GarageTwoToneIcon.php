@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['search'],
+    tags: ['automobile', 'automotive', 'car', 'cars', 'direction', 'garage', 'maps', 'transportation', 'travel', 'vehicle'],
+)]
 final class GarageTwoToneIcon extends SVG
 {
     public function __construct()

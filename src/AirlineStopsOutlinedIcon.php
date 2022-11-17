@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['airline', 'arrow', 'destination', 'direction', 'layover', 'location', 'maps', 'place', 'stops', 'transportation', 'travel', 'trip'],
+)]
 final class AirlineStopsOutlinedIcon extends SVG
 {
     public function __construct()

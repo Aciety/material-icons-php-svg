@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['appliance', 'cold', 'food', 'fridge', 'home', 'house', 'ice', 'kitchen', 'places', 'refrigerator', 'storage'],
+)]
 final class KitchenSharpIcon extends SVG
 {
     public function __construct()

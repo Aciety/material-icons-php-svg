@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['draft', 'fax', 'ink', 'machine', 'office', 'paper', 'print', 'printer', 'send'],
+)]
 final class PrintRoundedIcon extends SVG
 {
     public function __construct()

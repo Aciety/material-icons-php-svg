@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['alphabet', 'character', 'definition', 'display', 'font', 'high', 'hq', 'letter', 'movie', 'movies', 'quality', 'resolution', 'screen', 'symbol', 'text', 'tv', 'type'],
+)]
 final class HighQualityOutlinedIcon extends SVG
 {
     public function __construct()

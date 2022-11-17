@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['+', 'alphabet', 'character', 'data', 'font', 'internet', 'letter', 'lte', 'mobile', 'network', 'plus', 'speed', 'symbol', 'text', 'type', 'wifi', 'wireless'],
+)]
 final class LtePlusMobiledataRoundedIcon extends SVG
 {
     public function __construct()

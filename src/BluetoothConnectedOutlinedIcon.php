@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['bluetooth', 'cast', 'connect', 'connection', 'device', 'paring', 'streaming', 'symbol', 'wireless'],
+)]
 final class BluetoothConnectedOutlinedIcon extends SVG
 {
     public function __construct()

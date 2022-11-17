@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['app', 'application', 'arrow', 'back', 'chevron', 'components', 'direction', 'disable_ios', 'interface', 'ios', 'left', 'navigation', 'new', 'previous', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
+)]
 final class ArrowBackIosNewIcon extends SVG
 {
     public function __construct()

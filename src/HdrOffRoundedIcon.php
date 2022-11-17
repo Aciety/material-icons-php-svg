@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['alphabet', 'character', 'disabled', 'dynamic', 'enabled', 'enhance', 'font', 'hdr', 'high', 'letter', 'off', 'on', 'range', 'select', 'slash', 'symbol', 'text', 'type'],
+)]
 final class HdrOffRoundedIcon extends SVG
 {
     public function __construct()

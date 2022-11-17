@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['Android', 'OS', 'cell', 'charging', 'connector', 'device', 'dock', 'hardware', 'iOS', 'mobile', 'phone', 'power', 'station', 'tablet'],
+)]
 final class DockIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['aqua', 'beach', 'lake', 'ocean', 'river', 'water', 'waves', 'weather'],
+)]
 final class WaterOutlinedIcon extends SVG
 {
     public function __construct()

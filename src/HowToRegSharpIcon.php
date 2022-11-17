@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['approve', 'ballot', 'check', 'complete', 'done', 'election', 'how', 'mark', 'ok', 'poll', 'register', 'registration', 'select', 'tick', 'to reg', 'validate', 'verified', 'vote', 'yes'],
+)]
 final class HowToRegSharpIcon extends SVG
 {
     public function __construct()

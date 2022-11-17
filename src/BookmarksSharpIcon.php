@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bookmark', 'bookmarks', 'favorite', 'label', 'layers', 'library', 'multiple', 'read', 'reading', 'remember', 'ribbon', 'save', 'stack', 'tag'],
+)]
 final class BookmarksSharpIcon extends SVG
 {
     public function __construct()

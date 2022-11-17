@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['destination', 'direction', 'gps', 'location', 'maps', 'pin', 'place', 'share', 'stop', 'tracking'],
+)]
 final class ShareLocationIcon extends SVG
 {
     public function __construct()

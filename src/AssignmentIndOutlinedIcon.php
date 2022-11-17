@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['account', 'assignment', 'clipboard', 'doc', 'document', 'face', 'ind', 'people', 'person', 'profile', 'user'],
+)]
 final class AssignmentIndOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['+', 'add', 'create', 'data', 'doc', 'document', 'drive', 'file', 'folder', 'new', 'plus', 'sheet', 'slide', 'storage', 'symbol'],
+)]
 final class CreateNewFolderTwoToneIcon extends SVG
 {
     public function __construct()

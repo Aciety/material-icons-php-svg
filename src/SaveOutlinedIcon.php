@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['data', 'disk', 'document', 'drive', 'file', 'floppy', 'multimedia', 'save', 'storage'],
+)]
 final class SaveOutlinedIcon extends SVG
 {
     public function __construct()

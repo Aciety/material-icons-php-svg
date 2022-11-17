@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['search'],
+    tags: ['close', 'glass', 'grid', 'home', 'house', 'interior', 'layout', 'outside', 'window'],
+)]
 final class WindowSharpIcon extends SVG
 {
     public function __construct()

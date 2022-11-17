@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['3', 'android', 'app', 'application', 'components', 'disable_ios', 'dots', 'etc', 'interface', 'more', 'screen', 'site', 'three', 'ui', 'ux', 'vert', 'vertical', 'web', 'website'],
+)]
 final class MoreVertRoundedIcon extends SVG
 {
     public function __construct()

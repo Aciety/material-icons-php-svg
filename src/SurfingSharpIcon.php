@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['athlete', 'athletic', 'beach', 'body', 'entertainment', 'exercise', 'hobby', 'human', 'people', 'person', 'sea', 'social sports', 'sports', 'summer', 'surfing', 'water'],
+)]
 final class SurfingSharpIcon extends SVG
 {
     public function __construct()

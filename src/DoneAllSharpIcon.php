@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['all', 'approve', 'check', 'complete', 'done', 'layers', 'mark', 'multiple', 'ok', 'select', 'stack', 'tick', 'validate', 'verified', 'yes'],
+)]
 final class DoneAllSharpIcon extends SVG
 {
     public function __construct()

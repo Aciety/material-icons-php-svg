@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['approve', 'archive', 'beenhere', 'bookmark', 'check', 'complete', 'done', 'favorite', 'label', 'library', 'mark', 'ok', 'read', 'reading', 'remember', 'ribbon', 'save', 'select', 'tag', 'tick', 'validate', 'verified', 'yes'],
+)]
 final class BeenhereRoundedIcon extends SVG
 {
     public function __construct()

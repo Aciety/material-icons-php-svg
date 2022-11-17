@@ -1,0 +1,14 @@
+{
+  "apple": ["brand", "logo"],
+  "facebook": ["brand", "logo", "social"],
+  "git_hub": ["brand", "code"],
+  "google": ["brand", "logo"],
+  "instagram": ["brand", "logo", "social"],
+  "linked_in": ["brand", "logo", "social"],
+  "pinterest": ["brand", "logo", "social"],
+  "reddit": ["brand", "logo", "social"],
+  "telegram": ["brand", "call", "chat", "logo", "messaging", "voice"],
+  "twitter" : ["brand", "logo", "social"],
+  "whats_app": ["brand", "call", "chat", "logo", "messaging", "voice"],
+  "you_tube": ["brand", "logo", "social", "video"]
+}

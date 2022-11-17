@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['arrows', 'computer', 'connect', 'connection', 'connectivity', 'dots', 'ethernet', 'internet', 'network', 'settings', 'wifi'],
+)]
 final class SettingsEthernetIcon extends SVG
 {
     public function __construct()

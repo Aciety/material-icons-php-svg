@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['athlete', 'athletic', 'beach', 'body', 'entertainment', 'exercise', 'hobby', 'human', 'ocean', 'people', 'person', 'places', 'pool', 'sea', 'sports', 'swim', 'swimming', 'water'],
+)]
 final class PoolTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'always', 'aod', 'device', 'display', 'hardware', 'homescreen', 'iOS', 'mobile', 'on', 'phone', 'tablet'],
+)]
 final class AodSharpIcon extends SVG
 {
     public function __construct()

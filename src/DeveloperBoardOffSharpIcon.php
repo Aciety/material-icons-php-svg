@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['board', 'chip', 'computer', 'developer', 'development', 'disabled', 'enabled', 'hardware', 'microchip', 'off', 'on', 'processor', 'slash'],
+)]
 final class DeveloperBoardOffSharpIcon extends SVG
 {
     public function __construct()

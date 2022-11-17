@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['clip', 'data', 'doc', 'document', 'drive', 'file', 'folder', 'folders', 'note', 'paper', 'present', 'reminder', 'sheet', 'slide', 'storage', 'writing'],
+)]
 final class FilePresentIcon extends SVG
 {
     public function __construct()

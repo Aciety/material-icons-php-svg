@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['?', 'Android', 'OS', 'assistance', 'cell', 'device', 'hardware', 'help', 'iOS', 'info', 'information', 'mobile', 'phone', 'punctuation', 'question mark', 'support', 'symbol', 'tablet', 'unknown'],
+)]
 final class DeviceUnknownOutlinedIcon extends SVG
 {
     public function __construct()

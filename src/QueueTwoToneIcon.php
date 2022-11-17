@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['add', 'collection', 'layers', 'list', 'multiple', 'music', 'playlist', 'queue', 'stack', 'stream', 'video'],
+)]
 final class QueueTwoToneIcon extends SVG
 {
     public function __construct()

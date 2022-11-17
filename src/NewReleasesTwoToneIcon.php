@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['!', 'alert', 'attention', 'burst', 'caution', 'danger', 'error', 'exclamation', 'important', 'mark', 'new', 'notification', 'release', 'releases', 'star', 'symbol', 'warning'],
+)]
 final class NewReleasesTwoToneIcon extends SVG
 {
     public function __construct()

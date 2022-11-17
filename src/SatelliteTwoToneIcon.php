@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['bluetooth', 'connect', 'connection', 'connectivity', 'data', 'device', 'image', 'internet', 'landscape', 'location', 'maps', 'mountain', 'mountains', 'network', 'photo', 'photography', 'picture', 'satellite', 'scan', 'service', 'signal', 'symbol', 'wireless-- wifi'],
+)]
 final class SatelliteTwoToneIcon extends SVG
 {
     public function __construct()

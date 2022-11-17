@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['achievement', 'bookmark', 'class', 'favorite', 'highlight', 'hotel', 'important', 'marked', 'rank', 'ranking', 'rate', 'rating', 'reward', 'save', 'saved', 'shape', 'special', 'star'],
+)]
 final class HotelClassTwoToneIcon extends SVG
 {
     public function __construct()

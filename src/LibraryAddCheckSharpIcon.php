@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['add', 'approve', 'check', 'collection', 'complete', 'done', 'layers', 'library', 'mark', 'multiple', 'music', 'ok', 'select', 'stacked', 'tick', 'validate', 'verified', 'video', 'yes'],
+)]
 final class LibraryAddCheckSharpIcon extends SVG
 {
     public function __construct()

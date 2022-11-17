@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['connection', 'data', 'disabled', 'enabled', 'internet', 'network', 'off', 'offline', 'on', 'portable', 'service', 'signal', 'slash', 'wifi', 'wireless'],
+)]
 final class PortableWifiOffIcon extends SVG
 {
     public function __construct()

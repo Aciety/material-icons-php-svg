@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['arrow', 'data', 'doc', 'document', 'drive', 'file', 'folder', 'sheet', 'slide', 'storage', 'up', 'upload'],
+)]
 final class DriveFolderUploadIcon extends SVG
 {
     public function __construct()

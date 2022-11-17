@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['body', 'hail', 'human', 'people', 'person', 'pick', 'public', 'stop', 'taxi', 'transportation'],
+)]
 final class HailIcon extends SVG
 {
     public function __construct()

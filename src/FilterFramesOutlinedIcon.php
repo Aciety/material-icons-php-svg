@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['boarders', 'border', 'camera', 'center', 'edit', 'editing', 'effect', 'filter', 'filters', 'focus', 'frame', 'frames', 'image', 'options', 'photo', 'photography', 'picture'],
+)]
 final class FilterFramesOutlinedIcon extends SVG
 {
     public function __construct()

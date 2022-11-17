@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['around', 'arrow', 'arrows', 'autorenew', 'cache', 'cached', 'direction', 'inprogress', 'load', 'loading refresh', 'navigation', 'renew', 'rotate', 'turn'],
+)]
 final class AutorenewTwoToneIcon extends SVG
 {
     public function __construct()

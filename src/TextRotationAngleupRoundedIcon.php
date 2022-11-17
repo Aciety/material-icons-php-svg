@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['A', 'alphabet', 'angleup', 'arrow', 'character', 'field', 'font', 'letter', 'move', 'rotate', 'symbol', 'text', 'type'],
+)]
 final class TextRotationAngleupRoundedIcon extends SVG
 {
     public function __construct()

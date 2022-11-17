@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['!', 'alert', 'attention', 'caution', 'danger', 'disabled', 'enabled', 'error', 'exclamation', 'important', 'mark', 'notification', 'octagon', 'off', 'offline', 'on', 'report', 'slash', 'symbol', 'warning'],
+)]
 final class ReportOffRoundedIcon extends SVG
 {
     public function __construct()

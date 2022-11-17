@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['2k', 'alphabet', 'analytics', 'bar', 'bars', 'character', 'chart', 'data', 'diagram', 'digit', 'font', 'graph', 'infographic', 'letter', 'measure', 'metrics', 'number', 'score', 'statistics', 'symbol', 'text', 'tracking', 'type'],
+)]
 final class ScoreRoundedIcon extends SVG
 {
     public function __construct()

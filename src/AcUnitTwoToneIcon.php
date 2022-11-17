@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['ac', 'air', 'cold', 'conditioner', 'flake', 'snow', 'temperature', 'unit', 'weather', 'winter'],
+)]
 final class AcUnitTwoToneIcon extends SVG
 {
     public function __construct()

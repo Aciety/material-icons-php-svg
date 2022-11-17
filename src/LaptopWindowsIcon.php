@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['Android', 'OS', 'chrome', 'device', 'display', 'hardware', 'iOS', 'laptop', 'mac', 'monitor', 'screen', 'web', 'window', 'windows'],
+)]
 final class LaptopWindowsIcon extends SVG
 {
     public function __construct()

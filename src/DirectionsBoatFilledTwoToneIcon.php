@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['automobile', 'boat', 'car', 'cars', 'direction', 'directions', 'ferry', 'filled', 'maps', 'public', 'transportation', 'vehicle'],
+)]
 final class DirectionsBoatFilledTwoToneIcon extends SVG
 {
     public function __construct()

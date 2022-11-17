@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['B', 'alphabet', 'bold', 'character', 'doc', 'edit', 'editing', 'editor', 'font', 'format', 'letter', 'sheet', 'spreadsheet', 'styles', 'symbol', 'text', 'type', 'writing'],
+)]
 final class FormatBoldIcon extends SVG
 {
     public function __construct()

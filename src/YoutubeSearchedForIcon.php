@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['arrow', 'back', 'backwards', 'find', 'glass', 'history', 'inprogress', 'load', 'loading', 'look', 'magnify', 'magnifying', 'refresh', 'renew', 'restore', 'reverse', 'rotate', 'search', 'see', 'yt'],
+)]
 final class YoutubeSearchedForIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['!', 'alert', 'attention', 'automobile', 'cab', 'car', 'cars', 'caution', 'danger', 'direction', 'error', 'exclamation', 'important', 'lyft', 'maps', 'mark', 'notification', 'public', 'symbol', 'taxi', 'transportation', 'uber', 'vehicle', 'warning', 'yellow'],
+)]
 final class TaxiAlertIcon extends SVG
 {
     public function __construct()

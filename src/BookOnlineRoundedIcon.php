@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['Android', 'OS', 'admission', 'appointment', 'book', 'cell', 'device', 'event', 'hardware', 'iOS', 'mobile', 'online', 'pass', 'phone', 'reservation', 'tablet', 'ticket'],
+)]
 final class BookOnlineRoundedIcon extends SVG
 {
     public function __construct()

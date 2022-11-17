@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['search'],
+    tags: ['bath', 'bathroom', 'closet', 'home', 'house', 'place', 'plumbing', 'room', 'shower', 'sprinkler', 'wash', 'water', 'wc'],
+)]
 final class BathroomTwoToneIcon extends SVG
 {
     public function __construct()

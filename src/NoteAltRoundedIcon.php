@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['alt', 'clipboard', 'document', 'file', 'memo', 'note', 'page', 'paper', 'writing'],
+)]
 final class NoteAltRoundedIcon extends SVG
 {
     public function __construct()

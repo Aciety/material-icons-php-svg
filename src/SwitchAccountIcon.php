@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['account', 'choices', 'face', 'human', 'multiple', 'options', 'people', 'person', 'profile', 'social', 'switch', 'user'],
+)]
 final class SwitchAccountIcon extends SVG
 {
     public function __construct()

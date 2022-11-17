@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'checkmark', 'device', 'good', 'hardware', 'iOS', 'mobile', 'ok', 'phone', 'security', 'tablet', 'tick', 'update'],
+)]
 final class SecurityUpdateGoodSharpIcon extends SVG
 {
     public function __construct()

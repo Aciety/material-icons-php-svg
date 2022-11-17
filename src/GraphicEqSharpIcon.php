@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['audio', 'eq', 'equalizer', 'graphic', 'music', 'recording', 'sound', 'voice'],
+)]
 final class GraphicEqSharpIcon extends SVG
 {
     public function __construct()

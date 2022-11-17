@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['android', 'connect', 'contect', 'disable_ios', 'link', 'media', 'multimedia', 'multiple', 'network', 'options', 'share', 'shared', 'sharing', 'social'],
+)]
 final class ShareTwoToneIcon extends SVG
 {
     public function __construct()

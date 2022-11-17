@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['bubble', 'chat', 'comment', 'communicate', 'feedback', 'message', 'outline', 'speech'],
+)]
 final class ChatBubbleOutlineIcon extends SVG
 {
     public function __construct()

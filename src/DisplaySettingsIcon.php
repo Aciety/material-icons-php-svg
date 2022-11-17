@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['Android', 'OS', 'application', 'change', 'chrome', 'desktop', 'details', 'device', 'display', 'gear', 'hardware', 'iOS', 'info', 'information', 'mac', 'monitor', 'options', 'personal', 'screen', 'service', 'settings', 'web', 'window'],
+)]
 final class DisplaySettingsIcon extends SVG
 {
     public function __construct()

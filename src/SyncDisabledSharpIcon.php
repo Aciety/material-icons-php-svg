@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['360', 'around', 'arrow', 'arrows', 'direction', 'disabled', 'enabled', 'inprogress', 'load', 'loading refresh', 'off', 'on', 'renew', 'rotate', 'slash', 'sync', 'turn'],
+)]
 final class SyncDisabledSharpIcon extends SVG
 {
     public function __construct()

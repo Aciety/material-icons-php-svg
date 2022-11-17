@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['alert'],
+    tags: ['+', 'active', 'add', 'alarm', 'alert', 'bell', 'chime', 'new', 'notifications', 'notify', 'plus', 'reminder', 'ring', 'sound', 'symbol'],
+)]
 final class AddAlertTwoToneIcon extends SVG
 {
     public function __construct()

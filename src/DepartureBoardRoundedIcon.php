@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['automobile', 'board', 'bus', 'car', 'cars', 'clock', 'departure', 'maps', 'public', 'schedule', 'time', 'transportation', 'travel', 'vehicle'],
+)]
 final class DepartureBoardRoundedIcon extends SVG
 {
     public function __construct()

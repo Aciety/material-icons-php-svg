@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['alt', 'arrow', 'box', 'click', 'cursor', 'draw', 'focus', 'highlight', 'pointer', 'select', 'selection', 'target'],
+)]
 final class HighlightAltIcon extends SVG
 {
     public function __construct()

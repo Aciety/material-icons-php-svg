@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['arrow', 'control', 'controls', 'fast', 'gauge', 'meter', 'motion', 'music', 'slow', 'speed', 'speedometer', 'velocity', 'video'],
+)]
 final class SpeedSharpIcon extends SVG
 {
     public function __construct()

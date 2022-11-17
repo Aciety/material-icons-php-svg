@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['Android', 'OS', 'airplay', 'cast', 'cell', 'connect', 'device', 'hardware', 'iOS', 'mobile', 'phone', 'screen', 'screencast', 'smart', 'stream', 'tablet', 'video'],
+)]
 final class SmartScreenRoundedIcon extends SVG
 {
     public function __construct()

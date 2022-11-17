@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['account', 'calendar', 'contact', 'date', 'face', 'human', 'information', 'people', 'perm', 'person', 'profile', 'schedule', 'time', 'user'],
+)]
 final class PermContactCalendarOutlinedIcon extends SVG
 {
     public function __construct()

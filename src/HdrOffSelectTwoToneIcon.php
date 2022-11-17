@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['alphabet', 'camera', 'character', 'circle', 'disabled', 'dynamic', 'enabled', 'font', 'hdr', 'high', 'letter', 'off', 'on', 'photo', 'range', 'select', 'slash', 'symbol', 'text', 'type'],
+)]
 final class HdrOffSelectTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['app', 'application desktop', 'approve', 'check', 'complete', 'design', 'domain', 'done', 'interface', 'internet', 'layout', 'mark', 'ok', 'screen', 'select', 'site', 'tick', 'ui', 'ux', 'validate', 'verification', 'verified', 'web', 'website', 'window', 'www', 'yes'],
+)]
 final class DomainVerificationSharpIcon extends SVG
 {
     public function __construct()

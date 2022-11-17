@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['article', 'data', 'description', 'doc', 'document', 'drive', 'file', 'folder', 'folders', 'notes', 'page', 'paper', 'sheet', 'slide', 'text', 'writing'],
+)]
 final class DescriptionRoundedIcon extends SVG
 {
     public function __construct()

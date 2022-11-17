@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['automobile', 'car', 'commute', 'direction', 'maps', 'public', 'train', 'transportation', 'trip', 'vehicle'],
+)]
 final class CommuteTwoToneIcon extends SVG
 {
     public function __construct()

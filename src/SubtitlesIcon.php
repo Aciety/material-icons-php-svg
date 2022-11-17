@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['accessible', 'caption', 'cc', 'character', 'closed', 'decoder', 'language', 'media', 'movies', 'subtitle', 'subtitles', 'tv'],
+)]
 final class SubtitlesIcon extends SVG
 {
     public function __construct()

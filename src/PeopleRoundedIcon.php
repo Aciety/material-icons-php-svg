@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['accounts', 'committee', 'face', 'family', 'friends', 'humans', 'network', 'people', 'persons', 'profiles', 'social', 'team', 'users'],
+)]
 final class PeopleRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['-', 'cancel', 'close', 'destination', 'direction', 'exit', 'highway', 'maps', 'minus', 'new', 'no', 'remove', 'road', 'stop', 'street', 'symbol', 'traffic', 'x'],
+)]
 final class RemoveRoadTwoToneIcon extends SVG
 {
     public function __construct()

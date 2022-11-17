@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['all', 'arrow', 'present', 'presentation', 'screen', 'share', 'site', 'slides', 'to', 'web', 'website'],
+)]
 final class PresentToAllTwoToneIcon extends SVG
 {
     public function __construct()

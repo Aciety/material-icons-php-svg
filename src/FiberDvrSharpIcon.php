@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['alphabet', 'character', 'digital', 'dvr', 'electronics', 'fiber', 'font', 'letter', 'network', 'record', 'recorder', 'symbol', 'text', 'tv', 'type', 'video'],
+)]
 final class FiberDvrSharpIcon extends SVG
 {
     public function __construct()

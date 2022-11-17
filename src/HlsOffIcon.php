@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['[offline]', 'alphabet', 'character', 'develop', 'developer', 'disabled', 'enabled', 'engineer', 'engineering', 'font', 'hls', 'letter', 'off', 'on', 'platform', 'slash', 'symbol', 'text', 'type'],
+)]
 final class HlsOffIcon extends SVG
 {
     public function __construct()

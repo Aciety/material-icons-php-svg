@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['?', 'assistance', 'center', 'help', 'info', 'information', 'punctuation', 'question mark', 'recent', 'restore', 'support', 'symbol'],
+)]
 final class HelpCenterOutlinedIcon extends SVG
 {
     public function __construct()

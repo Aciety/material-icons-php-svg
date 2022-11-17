@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['+', 'add', 'certified', 'moderator', 'new', 'plus', 'privacy', 'private', 'protect', 'protection', 'security', 'shield', 'symbol', 'verified'],
+)]
 final class AddModeratorIcon extends SVG
 {
     public function __construct()

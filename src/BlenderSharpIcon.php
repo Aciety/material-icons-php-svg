@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['search'],
+    tags: ['appliance', 'blender', 'cooking', 'electric', 'juicer', 'kitchen', 'machine', 'vitamix'],
+)]
 final class BlenderSharpIcon extends SVG
 {
     public function __construct()

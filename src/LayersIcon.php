@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['arrange', 'disabled', 'enabled', 'interaction', 'layers', 'maps', 'off', 'on', 'overlay', 'pages', 'slash'],
+)]
 final class LayersIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['adjust', 'adjustment', 'compare', 'edit', 'editing', 'edits', 'enhance', 'fix', 'image', 'images', 'photo', 'photography', 'photos', 'scan', 'settings'],
+)]
 final class CompareTwoToneIcon extends SVG
 {
     public function __construct()

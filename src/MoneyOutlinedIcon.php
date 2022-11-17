@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['100', 'bill', 'card', 'cash', 'coin', 'commerce', 'cost', 'credit', 'currency', 'digit', 'dollars', 'finance', 'money', 'number', 'online', 'pay', 'payment', 'price', 'shopping', 'symbol'],
+)]
 final class MoneyOutlinedIcon extends SVG
 {
     public function __construct()

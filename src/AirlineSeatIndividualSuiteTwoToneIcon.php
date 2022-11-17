@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['airline', 'body', 'business', 'class', 'first', 'human', 'individual', 'people', 'person', 'rest', 'seat', 'sleep', 'suite', 'travel'],
+)]
 final class AirlineSeatIndividualSuiteTwoToneIcon extends SVG
 {
     public function __construct()

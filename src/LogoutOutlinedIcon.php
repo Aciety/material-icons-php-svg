@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['app', 'application', 'arrow', 'components', 'design', 'exit', 'interface', 'leave', 'log', 'login', 'logout', 'right', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
+)]
 final class LogoutOutlinedIcon extends SVG
 {
     public function __construct()

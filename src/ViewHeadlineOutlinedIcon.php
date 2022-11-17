@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['design', 'format', 'grid', 'headline', 'layout', 'paragraph', 'text', 'view', 'website'],
+)]
 final class ViewHeadlineOutlinedIcon extends SVG
 {
     public function __construct()

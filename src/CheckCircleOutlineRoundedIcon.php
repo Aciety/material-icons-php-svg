@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['approve', 'check', 'circle', 'complete', 'done', 'finished', 'mark', 'ok', 'outline', 'select', 'tick', 'validate', 'verified', 'yes'],
+)]
 final class CheckCircleOutlineRoundedIcon extends SVG
 {
     public function __construct()

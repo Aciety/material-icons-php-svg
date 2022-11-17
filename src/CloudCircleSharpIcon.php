@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['app', 'application', 'backup', 'circle', 'cloud', 'connection', 'drive', 'files', 'folders', 'internet', 'network', 'sky', 'storage', 'upload'],
+)]
 final class CloudCircleSharpIcon extends SVG
 {
     public function __construct()

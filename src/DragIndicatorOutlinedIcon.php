@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['app', 'application', 'circles', 'components', 'design', 'dots', 'drag', 'drop', 'indicator', 'interface', 'layout', 'mobile', 'monitor', 'move', 'phone', 'screen', 'shape', 'shift', 'site', 'tablet', 'ui', 'ux', 'web', 'website', 'window'],
+)]
 final class DragIndicatorOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['bathroom', 'closet', 'female', 'male', 'man', 'restroom', 'room', 'wash', 'water', 'wc', 'women'],
+)]
 final class WcIcon extends SVG
 {
     public function __construct()

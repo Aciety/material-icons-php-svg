@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['communicating', 'connect', 'contact', 'distance', 'people', 'signal', 'social', 'socialize', 'without'],
+)]
 final class ConnectWithoutContactIcon extends SVG
 {
     public function __construct()

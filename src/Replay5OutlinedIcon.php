@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['5', 'arrow', 'arrows', 'control', 'controls', 'digit', 'five', 'music', 'number', 'refresh', 'renew', 'repeat', 'replay', 'symbol', 'video'],
+)]
 final class Replay5OutlinedIcon extends SVG
 {
     public function __construct()

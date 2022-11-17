@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['account', 'admin', 'avatar', 'certified', 'face', 'human', 'panel', 'people', 'person', 'privacy', 'private', 'profile', 'protect', 'protection', 'security', 'settings', 'shield', 'user', 'verified'],
+)]
 final class AdminPanelSettingsOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['3', 'digits', 'duration', 'number', 'numbers', 'seconds', 'time', 'timer'],
+)]
 final class Timer3RoundedIcon extends SVG
 {
     public function __construct()

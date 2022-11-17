@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['!', 'alert', 'attention', 'caution', 'danger', 'duration', 'error', 'errors', 'exclamation', 'important', 'mark', 'notification', 'process', 'processing', 'running', 'symbol', 'time', 'warning', 'with'],
+)]
 final class RunningWithErrorsOutlinedIcon extends SVG
 {
     public function __construct()

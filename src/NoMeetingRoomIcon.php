@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['building', 'disabled', 'door', 'doorway', 'enabled', 'entrance', 'home', 'house', 'interior', 'meeting', 'no', 'off', 'office', 'on', 'open', 'places', 'room', 'slash'],
+)]
 final class NoMeetingRoomIcon extends SVG
 {
     public function __construct()

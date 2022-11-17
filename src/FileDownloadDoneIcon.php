@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['arrow', 'arrows', 'check', 'done', 'down', 'download', 'downloads', 'drive', 'file', 'install', 'installed', 'tick', 'upload'],
+)]
 final class FileDownloadDoneIcon extends SVG
 {
     public function __construct()

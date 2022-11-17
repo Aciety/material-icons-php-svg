@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['7', 'brightness', 'circle', 'control', 'crescent', 'level', 'moon', 'screen', 'sun'],
+)]
 final class Brightness7SharpIcon extends SVG
 {
     public function __construct()

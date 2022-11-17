@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['bad', 'disappointment', 'dislike', 'emoji', 'emotions', 'expressions', 'face', 'feelings', 'mood', 'person', 'rating', 'social', 'survey', 'unhappiness', 'unhappy', 'unpleased', 'unsmile', 'unsmiling'],
+)]
 final class MoodBadSharpIcon extends SVG
 {
     public function __construct()

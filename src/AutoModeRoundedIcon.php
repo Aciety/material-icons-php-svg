@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['home'],
+    tags: ['around', 'arrow', 'arrows', 'auto', 'direction', 'inprogress', 'load', 'loading refresh', 'mode', 'navigation', 'nest', 'renew', 'rotate', 'turn'],
+)]
 final class AutoModeRoundedIcon extends SVG
 {
     public function __construct()

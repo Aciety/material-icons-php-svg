@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['approve', 'bill', 'card', 'cash', 'check', 'coin', 'commerce', 'complete', 'cost', 'credit', 'currency', 'dollars', 'done', 'finance', 'loan', 'mark', 'money', 'ok', 'online', 'pay', 'payment', 'score', 'select', 'symbol', 'tick', 'validate', 'verified', 'yes'],
+)]
 final class CreditScoreOutlinedIcon extends SVG
 {
     public function __construct()

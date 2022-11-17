@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['disabled', 'enabled', 'favorite', 'indent', 'label', 'library', 'mail', 'off', 'on', 'remember', 'save', 'slash', 'stamp', 'sticker', 'tag', 'wing'],
+)]
 final class LabelOffOutlinedIcon extends SVG
 {
     public function __construct()

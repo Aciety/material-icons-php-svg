@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['atm', 'bill', 'card', 'cart', 'cash', 'coin', 'commerce', 'credit', 'currency', 'dollars', 'local', 'money', 'online', 'pay', 'payment', 'shopping', 'symbol'],
+)]
 final class LocalAtmIcon extends SVG
 {
     public function __construct()

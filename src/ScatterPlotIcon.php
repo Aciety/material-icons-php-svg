@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['analytics', 'bar', 'bars', 'chart', 'circles', 'data', 'diagram', 'dot', 'graph', 'infographic', 'measure', 'metrics', 'plot', 'scatter', 'statistics', 'tracking'],
+)]
 final class ScatterPlotIcon extends SVG
 {
     public function __construct()

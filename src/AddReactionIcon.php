@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['+', 'add', 'emoji', 'emotions', 'expressions', 'face', 'feelings', 'glad', 'happiness', 'happy', 'insert', 'like', 'mood', 'new', 'person', 'pleased', 'plus', 'smile', 'smiling', 'social', 'survey', 'symbol'],
+)]
 final class AddReactionIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['camera', 'card', 'chip', 'device', 'memory', 'phone', 'sim', 'storage'],
+)]
 final class SimCardIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['3', 'bubble', 'chat', 'communication', 'conversation', 'dots', 'message', 'more', 'service', 'sms', 'speech', 'three'],
+)]
 final class SmsTwoToneIcon extends SVG
 {
     public function __construct()

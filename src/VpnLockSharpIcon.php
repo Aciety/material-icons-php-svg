@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['earth', 'globe', 'lock', 'locked', 'network', 'password', 'privacy', 'private', 'protection', 'safety', 'secure', 'security', 'virtual', 'vpn', 'world'],
+)]
 final class VpnLockSharpIcon extends SVG
 {
     public function __construct()

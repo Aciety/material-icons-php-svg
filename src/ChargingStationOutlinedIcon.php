@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['Android', 'OS', 'battery', 'bolt', 'cell', 'charging', 'device', 'electric', 'hardware', 'iOS', 'lightning', 'mobile', 'phone', 'station', 'tablet', 'thunderbolt'],
+)]
 final class ChargingStationOutlinedIcon extends SVG
 {
     public function __construct()

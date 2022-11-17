@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['?', 'assistance', 'bubble', 'chat', 'comment', 'communicate', 'help', 'info', 'information', 'live', 'message', 'punctuation', 'question mark', 'recent', 'restore', 'speech', 'support', 'symbol'],
+)]
 final class LiveHelpSharpIcon extends SVG
 {
     public function __construct()

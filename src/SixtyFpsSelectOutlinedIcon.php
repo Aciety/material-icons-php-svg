@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['60', 'camera', 'digits', 'fps', 'frame', 'frequency', 'numbers', 'per', 'rate', 'second', 'seconds', 'select', 'video'],
+)]
 final class SixtyFpsSelectOutlinedIcon extends SVG
 {
     public function __construct()

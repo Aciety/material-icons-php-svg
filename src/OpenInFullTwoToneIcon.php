@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['action', 'arrow', 'arrows', 'expand', 'full', 'grow', 'in', 'move', 'open'],
+)]
 final class OpenInFullTwoToneIcon extends SVG
 {
     public function __construct()

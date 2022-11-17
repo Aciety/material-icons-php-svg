@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['colors', 'disabled', 'drop', 'droplet', 'enabled', 'hue', 'invert', 'inverted', 'off', 'offline', 'on', 'opacity', 'palette', 'slash', 'tone', 'water'],
+)]
 final class InvertColorsOffTwoToneIcon extends SVG
 {
     public function __construct()

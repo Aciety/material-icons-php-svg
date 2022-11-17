@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['around', 'inprogress', 'load', 'loading refresh', 'lock', 'locked', 'password', 'privacy', 'private', 'protection', 'renew', 'rotate', 'safety', 'secure', 'security', 'turn'],
+)]
 final class LockResetSharpIcon extends SVG
 {
     public function __construct()

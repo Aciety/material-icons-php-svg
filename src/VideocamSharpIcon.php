@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['cam', 'camera', 'conference', 'film', 'filming', 'hardware', 'image', 'motion', 'picture', 'video', 'videography'],
+)]
 final class VideocamSharpIcon extends SVG
 {
     public function __construct()

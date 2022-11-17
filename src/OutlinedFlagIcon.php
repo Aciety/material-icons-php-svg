@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['country', 'flag', 'goal', 'mark', 'nation', 'outlined', 'report', 'start'],
+)]
 final class OutlinedFlagIcon extends SVG
 {
     public function __construct()

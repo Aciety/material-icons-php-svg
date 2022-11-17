@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['backup', 'cloud', 'daydream', 'drive', 'settings', 'storage', 'system'],
+)]
 final class SettingsSystemDaydreamIcon extends SVG
 {
     public function __construct()

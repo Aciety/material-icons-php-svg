@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['ballot', 'election', 'how', 'poll', 'to', 'vote'],
+)]
 final class HowToVoteOutlinedIcon extends SVG
 {
     public function __construct()

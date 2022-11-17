@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['brackets', 'clipboard', 'code', 'css', 'develop', 'developer', 'doc', 'document', 'engineer', 'engineering clipboard', 'html', 'instructions', 'integration', 'platform'],
+)]
 final class IntegrationInstructionsSharpIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['analytics', 'bar', 'chart-chart', 'data', 'diagram', 'graph', 'infographic', 'measure', 'metrics', 'stacked', 'statistics', 'tracking'],
+)]
 final class StackedBarChartIcon extends SVG
 {
     public function __construct()

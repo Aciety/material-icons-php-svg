@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['3g', 'alphabet', 'cellular', 'character', 'digit', 'font', 'letter', 'mobile', 'mobiledata', 'network', 'number', 'phone', 'signal', 'speed', 'symbol', 'text', 'type', 'wifi'],
+)]
 final class ThreeGMobiledataRoundedIcon extends SVG
 {
     public function __construct()

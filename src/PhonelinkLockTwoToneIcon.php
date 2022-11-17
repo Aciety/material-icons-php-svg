@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['Android', 'OS', 'cell', 'connection', 'device', 'erase', 'hardware', 'iOS', 'lock', 'locked', 'mobile', 'password', 'phone', 'phonelink', 'privacy', 'private', 'protection', 'safety', 'secure', 'security', 'tablet'],
+)]
 final class PhonelinkLockTwoToneIcon extends SVG
 {
     public function __construct()

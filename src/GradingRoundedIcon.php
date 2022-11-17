@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['approve', 'check', 'complete', 'document', 'done', 'feedback', 'grade', 'mark', 'ok', 'reviewed', 'select', 'star_boarder', 'star_border_purple500', 'star_outline', 'star_purple500', 'star_rate', 'tick', 'validate', 'verified', 'writing', 'yes'],
+)]
 final class GradingRoundedIcon extends SVG
 {
     public function __construct()

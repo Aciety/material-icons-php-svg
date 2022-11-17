@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['bubble', 'chat', 'comment', 'comments', 'communicate', 'disabled', 'enabled', 'feedback', 'message', 'off', 'offline', 'on', 'slash', 'speech'],
+)]
 final class CommentsDisabledTwoToneIcon extends SVG
 {
     public function __construct()

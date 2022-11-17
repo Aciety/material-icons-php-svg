@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['comment', 'feedback', 'pen', 'pencil', 'rate', 'review', 'stars', 'write'],
+)]
 final class RateReviewIcon extends SVG
 {
     public function __construct()

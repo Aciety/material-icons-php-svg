@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['T', 'alphabet', 'character', 'clear', 'disabled', 'doc', 'edit', 'editing', 'editor', 'enabled', 'font', 'format', 'letter', 'off', 'on', 'sheet', 'slash', 'spreadsheet', 'style', 'symbol', 'text', 'type', 'writing'],
+)]
 final class FormatClearOutlinedIcon extends SVG
 {
     public function __construct()

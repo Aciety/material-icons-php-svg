@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['a', 'arrow', 'arrows', 'body', 'direction', 'human', 'left', 'maps', 'people', 'person', 'public', 'right', 'route', 'station', 'stop', 'transfer', 'transportation', 'vehicle', 'walk', 'within'],
+)]
 final class TransferWithinAStationSharpIcon extends SVG
 {
     public function __construct()

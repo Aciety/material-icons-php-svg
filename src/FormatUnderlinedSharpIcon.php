@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['alphabet', 'character', 'doc', 'edit', 'editing', 'editor', 'font', 'format', 'letter', 'line', 'sheet', 'spreadsheet', 'style', 'symbol', 'text', 'type', 'under', 'underlined', 'writing'],
+)]
 final class FormatUnderlinedSharpIcon extends SVG
 {
     public function __construct()

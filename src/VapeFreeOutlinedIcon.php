@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['disabled', 'e-cigarette', 'enabled', 'free', 'never', 'no', 'off', 'on', 'places', 'prohibited', 'slash', 'smoke', 'smoking', 'tobacco', 'vape', 'vaping', 'vapor', 'warning', 'zone'],
+)]
 final class VapeFreeOutlinedIcon extends SVG
 {
     public function __construct()

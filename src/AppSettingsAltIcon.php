@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['Android', 'OS', 'app', 'applications', 'cell', 'device', 'gear', 'hardware', 'iOS', 'mobile', 'phone', 'setting', 'settings', 'tablet'],
+)]
 final class AppSettingsAltIcon extends SVG
 {
     public function __construct()

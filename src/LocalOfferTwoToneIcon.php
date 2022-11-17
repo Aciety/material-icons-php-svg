@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['deal', 'discount', 'offer', 'price', 'shop', 'shopping', 'store', 'tag'],
+)]
 final class LocalOfferTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['toggle'],
+    tags: ['500', 'best', 'bookmark', 'favorite', 'highlight', 'purple', 'ranking', 'rate', 'rating', 'save', 'star', 'toggle'],
+)]
 final class StarPurple500Icon extends SVG
 {
     public function __construct()

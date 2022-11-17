@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['airplay', 'arrow', 'connect', 'control', 'desktop', 'device', 'display', 'monitor', 'screen', 'signal'],
+)]
 final class AirplayRoundedIcon extends SVG
 {
     public function __construct()

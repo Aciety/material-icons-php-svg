@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['!', 'alert', 'attention', 'bill', 'card', 'cart', 'cash', 'caution', 'coin', 'commerce', 'credit', 'currency', 'danger', 'dollars', 'error', 'exclamation', 'important', 'limits', 'mark', 'money', 'notification', 'online', 'pay', 'payment', 'production', 'quantity', 'shopping', 'symbol', 'warning'],
+)]
 final class ProductionQuantityLimitsIcon extends SVG
 {
     public function __construct()

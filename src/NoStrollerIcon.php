@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['baby', 'care', 'carriage', 'child', 'children', 'disabled', 'enabled', 'infant', 'kid', 'newborn', 'no', 'off', 'on', 'parents', 'slash', 'stroller', 'toddler', 'young'],
+)]
 final class NoStrollerIcon extends SVG
 {
     public function __construct()

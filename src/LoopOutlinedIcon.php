@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['around', 'arrow', 'arrows', 'direction', 'inprogress', 'load', 'loading refresh', 'loop', 'music', 'navigation', 'renew', 'rotate', 'turn'],
+)]
 final class LoopOutlinedIcon extends SVG
 {
     public function __construct()

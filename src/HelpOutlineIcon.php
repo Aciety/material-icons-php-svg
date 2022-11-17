@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['?', 'assistance', 'circle', 'help', 'info', 'information', 'outline', 'punctuation', 'question mark', 'recent', 'restore', 'shape', 'support', 'symbol'],
+)]
 final class HelpOutlineIcon extends SVG
 {
     public function __construct()

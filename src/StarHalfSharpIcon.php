@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['toggle'],
+    tags: ['achievement', 'bookmark', 'favorite', 'half', 'highlight', 'important', 'marked', 'ranking', 'rate', 'rating rank', 'reward', 'save', 'saved', 'shape', 'special', 'star', 'toggle'],
+)]
 final class StarHalfSharpIcon extends SVG
 {
     public function __construct()

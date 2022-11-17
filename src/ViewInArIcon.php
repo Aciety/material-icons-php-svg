@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['3d', 'ar', 'augmented', 'cube', 'daydream', 'headset', 'in', 'reality', 'square', 'view', 'vr'],
+)]
 final class ViewInArIcon extends SVG
 {
     public function __construct()

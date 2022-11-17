@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['aromatherapy', 'flower', 'healthcare', 'leaf', 'massage', 'meditation', 'nature', 'petals', 'places', 'relax', 'spa', 'wellbeing', 'wellness'],
+)]
 final class SpaSharpIcon extends SVG
 {
     public function __construct()

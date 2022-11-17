@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['benefits', 'card', 'credit', 'heart', 'loyalty', 'membership', 'miles', 'points', 'program', 'subscription', 'tag', 'travel', 'trip'],
+)]
 final class LoyaltyOutlinedIcon extends SVG
 {
     public function __construct()

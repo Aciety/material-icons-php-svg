@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['app', 'application', 'around', 'backup', 'cloud', 'connection', 'drive', 'files', 'folders', 'inprogress', 'internet', 'load', 'loading refresh', 'network', 'renew', 'rotate', 'sky', 'storage', 'turn', 'upload'],
+)]
 final class CloudSyncOutlinedIcon extends SVG
 {
     public function __construct()

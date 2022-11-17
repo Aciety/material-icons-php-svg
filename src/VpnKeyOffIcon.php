@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['[offline]', 'code', 'disabled', 'enabled', 'key', 'lock', 'network', 'off', 'on', 'passcode', 'password', 'slash', 'unlock', 'vpn'],
+)]
 final class VpnKeyOffIcon extends SVG
 {
     public function __construct()

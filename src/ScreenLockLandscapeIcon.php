@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'device', 'hardware', 'iOS', 'landscape', 'lock', 'mobile', 'phone', 'rotate', 'screen', 'tablet'],
+)]
 final class ScreenLockLandscapeIcon extends SVG
 {
     public function __construct()

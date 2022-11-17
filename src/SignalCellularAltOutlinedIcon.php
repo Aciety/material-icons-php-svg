@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['alt', 'analytics', 'bar', 'cell', 'cellular', 'chart', 'data', 'diagram', 'graph', 'infographic', 'internet', 'measure', 'metrics', 'mobile', 'network', 'phone', 'signal', 'statistics', 'tracking', 'wifi', 'wireless'],
+)]
 final class SignalCellularAltOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['Android', 'OS', 'cell', 'device', 'disabled', 'enabled', 'hardware', 'iOS', 'mobile', 'off', 'on', 'phone', 'silence', 'slash', 'tablet'],
+)]
 final class MobileOffTwoToneIcon extends SVG
 {
     public function __construct()

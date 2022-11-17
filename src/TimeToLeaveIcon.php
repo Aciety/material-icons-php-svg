@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['automobile', 'car', 'cars', 'destination', 'direction', 'drive', 'estimate', 'eta', 'maps', 'public', 'transportation', 'travel', 'trip', 'vehicle'],
+)]
 final class TimeToLeaveIcon extends SVG
 {
     public function __construct()

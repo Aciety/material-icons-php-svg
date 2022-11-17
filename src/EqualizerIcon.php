@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['adjustment', 'analytics', 'chart', 'data', 'equalizer', 'graph', 'measure', 'metrics', 'music', 'noise', 'sound', 'static', 'statistics', 'tracking', 'volume'],
+)]
 final class EqualizerIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['approve', 'check', 'circle', 'complete', 'disabled', 'done', 'enabled', 'mark', 'off', 'ok', 'on', 'select', 'slash', 'tick', 'unpublished', 'validate', 'verified', 'yes'],
+)]
 final class UnpublishedIcon extends SVG
 {
     public function __construct()

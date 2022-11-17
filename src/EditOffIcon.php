@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Texts\SVGTitle;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['compose', 'create', 'disabled', 'draft', 'edit', 'editing', 'enabled', 'input', 'new', 'off', 'offline', 'on', 'pen', 'pencil', 'slash', 'write', 'writing'],
+)]
 final class EditOffIcon extends SVG
 {
     public function __construct()

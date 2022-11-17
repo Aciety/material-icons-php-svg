@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['automobile', 'cab', 'call', 'car', 'cars', 'direction', 'local', 'lyft', 'maps', 'public', 'taxi', 'transportation', 'uber', 'vehicle', 'yellow'],
+)]
 final class LocalTaxiSharpIcon extends SVG
 {
     public function __construct()

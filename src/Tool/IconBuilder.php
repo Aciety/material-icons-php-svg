@@ -27,13 +27,15 @@ use function in_array;
 final class IconBuilder
 {
     /**
-     * @param non-empty-string $iconName
+     * @param non-empty-string       $iconName
+     * @param list<non-empty-string> $categories
+     * @param list<non-empty-string> $tags
      *
      * @return non-empty-string
      */
-    public function build(SVG $svg, string $iconName): string
+    public function build(SVG $svg, string $iconName, array $categories, array $tags): string
     {
-        $template = new IconPhpTemplate($iconName);
+        $template = new IconPhpTemplate($iconName, $categories, $tags);
         $template->addCall('$doc = $this->getDocument();');
         $template->addCall('$doc->setAttribute(\'viewBox\', \'0 0 24 24\');');
 

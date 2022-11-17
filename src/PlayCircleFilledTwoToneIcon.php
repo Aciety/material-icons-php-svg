@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['arrow', 'circle', 'control', 'controls', 'media', 'music', 'play', 'video'],
+)]
 final class PlayCircleFilledTwoToneIcon extends SVG
 {
     public function __construct()

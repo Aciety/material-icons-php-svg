@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['data', 'doc', 'document', 'drive', 'file', 'folder', 'folders', 'page', 'paper', 'request', 'sheet', 'slide', 'writing'],
+)]
 final class RequestPageIcon extends SVG
 {
     public function __construct()

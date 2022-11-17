@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['bookmark', 'data', 'doc', 'document', 'drive', 'favorite', 'file', 'folder', 'highlight', 'important', 'marked', 'save', 'saved', 'shape', 'sheet', 'slide', 'special', 'star', 'storage'],
+)]
 final class FolderSpecialRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['911', 'badge', 'law', 'local', 'officer', 'police', 'protect', 'protection', 'security', 'shield'],
+)]
 final class LocalPoliceOutlinedIcon extends SVG
 {
     public function __construct()

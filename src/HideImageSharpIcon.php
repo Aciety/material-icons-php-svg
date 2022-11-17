@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['disabled', 'enabled', 'hide', 'image', 'landscape', 'mountain', 'mountains', 'off', 'on', 'photo', 'photography', 'picture', 'slash'],
+)]
 final class HideImageSharpIcon extends SVG
 {
     public function __construct()

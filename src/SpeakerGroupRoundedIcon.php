@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['box', 'electronic', 'group', 'loud', 'multiple', 'music', 'sound', 'speaker', 'stereo', 'system', 'video'],
+)]
 final class SpeakerGroupRoundedIcon extends SVG
 {
     public function __construct()

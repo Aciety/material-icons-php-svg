@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['align', 'alignment', 'arrow', 'doc', 'edit', 'editing', 'editor', 'sheet', 'spreadsheet', 'text', 'top', 'type', 'up', 'vertical', 'writing'],
+)]
 final class VerticalAlignTopTwoToneIcon extends SVG
 {
     public function __construct()

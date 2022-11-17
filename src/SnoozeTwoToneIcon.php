@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['alarm', 'bell', 'clock', 'duration', 'notification', 'snooze', 'time', 'timer', 'watch', 'z'],
+)]
 final class SnoozeTwoToneIcon extends SVG
 {
     public function __construct()

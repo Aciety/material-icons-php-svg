@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['?', 'assistance', 'battery', 'cell', 'charge', 'help', 'info', 'information', 'mobile', 'power', 'punctuation', 'question mark', 'support', 'symbol', 'unknown'],
+)]
 final class BatteryUnknownTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['angle', 'circle', 'eye', 'fish', 'image', 'panorama', 'photo', 'photography', 'picture', 'wide'],
+)]
 final class PanoramaFishEyeIcon extends SVG
 {
     public function __construct()

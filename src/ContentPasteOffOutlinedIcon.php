@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['clipboard', 'content', 'disabled', 'doc', 'document', 'enabled', 'file', 'off', 'on', 'paste', 'slash'],
+)]
 final class ContentPasteOffOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['!', 'alert', 'attention', 'caution', 'certified', 'danger', 'error', 'exclamation', 'gpp', 'important', 'mark', 'maybe', 'notification', 'privacy', 'private', 'protect', 'protection', 'security', 'shield', 'sim', 'symbol', 'verified', 'warning'],
+)]
 final class GppMaybeOutlinedIcon extends SVG
 {
     public function __construct()

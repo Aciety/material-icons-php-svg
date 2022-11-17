@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['adjust', 'adjustments', 'crop', 'edit', 'editing', 'focus', 'frame', 'free', 'image', 'photo', 'photos', 'settings', 'size', 'zoom'],
+)]
 final class CropFreeIcon extends SVG
 {
     public function __construct()

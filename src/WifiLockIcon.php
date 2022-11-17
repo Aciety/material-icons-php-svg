@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['cellular', 'connection', 'data', 'internet', 'lock', 'locked', 'mobile', 'network', 'password', 'privacy', 'private', 'protection', 'safety', 'secure', 'security', 'service', 'signal', 'wifi', 'wireless'],
+)]
 final class WifiLockIcon extends SVG
 {
     public function __construct()

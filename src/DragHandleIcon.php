@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['app', 'application ui', 'components', 'design', 'drag', 'handle', 'interface', 'layout', 'menu', 'move', 'screen', 'site', 'ui', 'ux', 'web', 'website', 'window'],
+)]
 final class DragHandleIcon extends SVG
 {
     public function __construct()

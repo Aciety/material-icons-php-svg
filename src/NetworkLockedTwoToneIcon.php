@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['alert', 'available', 'cellular', 'connection', 'data', 'error', 'internet', 'lock', 'locked', 'mobile', 'network', 'not', 'privacy', 'private', 'protection', 'restricted', 'safety', 'secure', 'security', 'service', 'signal', 'warning', 'wifi', 'wireless'],
+)]
 final class NetworkLockedTwoToneIcon extends SVG
 {
     public function __construct()

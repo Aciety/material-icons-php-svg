@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['around', 'arrows', 'find', 'glass', 'inprogress', 'load', 'loading refresh', 'look', 'magnify', 'magnifying', 'renew', 'replace', 'rotate', 'search', 'see'],
+)]
 final class FindReplaceSharpIcon extends SVG
 {
     public function __construct()

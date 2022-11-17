@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['[online]', 'data', 'disabled', 'doc', 'document', 'drive', 'enabled', 'file', 'folder', 'folders', 'off', 'on', 'sheet', 'slash', 'slide', 'storage'],
+)]
 final class FolderOffTwoToneIcon extends SVG
 {
     public function __construct()

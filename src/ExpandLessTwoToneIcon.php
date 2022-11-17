@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['arrow', 'arrows', 'chevron', 'collapse', 'direction', 'expand', 'expandable', 'less', 'list', 'up'],
+)]
 final class ExpandLessTwoToneIcon extends SVG
 {
     public function __construct()

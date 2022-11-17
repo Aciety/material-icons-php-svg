@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['arrow', 'bulb', 'call', 'cell', 'contact', 'device', 'hardware', 'idea', 'inprogress', 'light', 'load', 'loading', 'mobile', 'model', 'phone', 'refresh', 'renew', 'restore', 'reverse', 'rotate', 'telephone', 'training'],
+)]
 final class OnDeviceTrainingRoundedIcon extends SVG
 {
     public function __construct()

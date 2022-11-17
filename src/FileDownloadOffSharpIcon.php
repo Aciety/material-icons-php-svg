@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['arrow', 'disabled', 'down', 'download', 'drive', 'enabled', 'export', 'file', 'install', 'off', 'on', 'save', 'slash', 'upload'],
+)]
 final class FileDownloadOffSharpIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['camera', 'film', 'image', 'library', 'photo', 'photography', 'roll'],
+)]
 final class CameraRollTwoToneIcon extends SVG
 {
     public function __construct()

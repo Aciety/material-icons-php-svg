@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['adjust', 'audio', 'controls', 'custom', 'customize', 'edit', 'editing', 'filter', 'filters', 'instant', 'mix', 'music', 'options', 'setting', 'settings', 'slider', 'sliders', 'switches', 'tune'],
+)]
 final class TuneTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['cancel', 'close', 'email', 'envelop', 'letter', 'mail', 'message', 'newsletter', 'off', 'remove', 'send', 'subscribe', 'unsubscribe'],
+)]
 final class UnsubscribeTwoToneIcon extends SVG
 {
     public function __construct()

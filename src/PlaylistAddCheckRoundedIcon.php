@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['add', 'approve', 'check', 'collection', 'complete', 'done', 'list', 'mark', 'music', 'ok', 'playlist', 'select', 'tick', 'validate', 'verified', 'yes'],
+)]
 final class PlaylistAddCheckRoundedIcon extends SVG
 {
     public function __construct()

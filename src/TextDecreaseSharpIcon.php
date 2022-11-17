@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['-', 'alphabet', 'character', 'decrease', 'font', 'letter', 'minus', 'remove', 'resize', 'subtract', 'symbol', 'text', 'type'],
+)]
 final class TextDecreaseSharpIcon extends SVG
 {
     public function __construct()

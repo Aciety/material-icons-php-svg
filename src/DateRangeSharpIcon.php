@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['calendar', 'date', 'day', 'event', 'month', 'range', 'remember', 'reminder', 'schedule', 'time', 'today', 'week'],
+)]
 final class DateRangeSharpIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['chair', 'couch', 'furniture', 'home', 'living', 'lounge', 'relax', 'room', 'weekend'],
+)]
 final class WeekendSharpIcon extends SVG
 {
     public function __construct()

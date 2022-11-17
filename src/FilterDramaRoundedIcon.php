@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['cloud', 'drama', 'edit', 'editing', 'effect', 'filter', 'image', 'photo', 'photography', 'picture', 'sky camera'],
+)]
 final class FilterDramaRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['disabled', 'enabled', 'off', 'on', 'paper', 'print', 'printer', 'slash'],
+)]
 final class PrintDisabledTwoToneIcon extends SVG
 {
     public function __construct()

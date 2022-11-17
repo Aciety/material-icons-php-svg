@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['committee', 'diverse', 'diversity', 'family', 'friends', 'group', 'groups', 'heart', 'humans', 'network', 'people', 'persons', 'social', 'team'],
+)]
 final class Diversity2SharpIcon extends SVG
 {
     public function __construct()

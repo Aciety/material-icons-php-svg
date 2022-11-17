@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['arrange', 'arrow', 'backward', 'bottom', 'list', 'low', 'move', 'order', 'priority'],
+)]
 final class LowPriorityIcon extends SVG
 {
     public function __construct()

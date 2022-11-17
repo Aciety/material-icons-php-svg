@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['!', 'alert', 'attention', 'caution', 'danger', 'error', 'exclamation', 'gmail', 'gmailerrorred', 'important', 'mark', 'notification', 'octagon', 'report', 'symbol', 'warning'],
+)]
 final class ReportGmailerrorredIcon extends SVG
 {
     public function __construct()

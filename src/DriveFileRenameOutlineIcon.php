@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['compose', 'create', 'draft', 'drive', 'edit', 'editing', 'file', 'input', 'pen', 'pencil', 'rename', 'write', 'writing'],
+)]
 final class DriveFileRenameOutlineIcon extends SVG
 {
     public function __construct()

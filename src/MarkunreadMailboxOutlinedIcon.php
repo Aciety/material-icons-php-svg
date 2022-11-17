@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['deliver', 'envelop', 'letter', 'mail', 'mailbox', 'markunread', 'post', 'postal', 'postbox', 'receive', 'send', 'unread'],
+)]
 final class MarkunreadMailboxOutlinedIcon extends SVG
 {
     public function __construct()

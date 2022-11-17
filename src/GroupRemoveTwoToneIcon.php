@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['accounts', 'committee', 'face', 'family', 'friends', 'group', 'humans', 'network', 'people', 'persons', 'profiles', 'remove', 'social', 'team', 'users'],
+)]
 final class GroupRemoveTwoToneIcon extends SVG
 {
     public function __construct()

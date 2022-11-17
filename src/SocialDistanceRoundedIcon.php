@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['6', 'apart', 'body', 'distance', 'ft', 'human', 'people', 'person', 'social', 'space'],
+)]
 final class SocialDistanceRoundedIcon extends SVG
 {
     public function __construct()

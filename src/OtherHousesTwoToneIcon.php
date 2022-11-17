@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['architecture', 'cottage', 'estate', 'home', 'house', 'houses', 'maps', 'other', 'place', 'real', 'residence', 'residential', 'stay', 'traveling'],
+)]
 final class OtherHousesTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['3', 'app', 'application', 'components', 'disable_ios', 'dots', 'etc', 'horiz', 'horizontal', 'interface', 'ios', 'more', 'screen', 'site', 'three', 'ui', 'ux', 'web', 'website'],
+)]
 final class MoreHorizSharpIcon extends SVG
 {
     public function __construct()

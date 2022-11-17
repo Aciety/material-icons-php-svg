@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['align', 'alignment', 'bulleted', 'doc', 'edit', 'editing', 'editor', 'format', 'list', 'notes', 'sheet', 'spreadsheet', 'text', 'type', 'writing'],
+)]
 final class FormatListBulletedSharpIcon extends SVG
 {
     public function __construct()

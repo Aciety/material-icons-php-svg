@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['+', 'account', 'add', 'avatar', 'face', 'human', 'new', 'people', 'person', 'plus', 'profile', 'symbol', 'user'],
+)]
 final class PersonAddTwoToneIcon extends SVG
 {
     public function __construct()

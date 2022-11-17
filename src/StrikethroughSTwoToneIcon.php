@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['alphabet', 'character', 'cross', 'doc', 'edit', 'editing', 'editor', 'font', 'letter', 'out', 's', 'sheet', 'spreadsheet', 'strikethrough', 'styles', 'symbol', 'text', 'type', 'writing'],
+)]
 final class StrikethroughSTwoToneIcon extends SVG
 {
     public function __construct()

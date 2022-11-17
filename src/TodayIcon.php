@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['calendar', 'date', 'day', 'event', 'mark', 'month', 'remember', 'reminder', 'schedule', 'time', 'today'],
+)]
 final class TodayIcon extends SVG
 {
     public function __construct()

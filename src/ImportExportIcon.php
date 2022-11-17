@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['arrow', 'arrows', 'direction', 'down', 'explort', 'import', 'up'],
+)]
 final class ImportExportIcon extends SVG
 {
     public function __construct()

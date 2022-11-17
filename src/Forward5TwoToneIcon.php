@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['10', '5', 'arrow', 'control', 'controls', 'digit', 'fast', 'forward', 'music', 'number', 'seconds', 'symbol', 'video'],
+)]
 final class Forward5TwoToneIcon extends SVG
 {
     public function __construct()

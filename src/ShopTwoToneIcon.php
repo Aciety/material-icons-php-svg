@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bag', 'bill', 'buy', 'card', 'cart', 'cash', 'coin', 'commerce', 'credit', 'currency', 'dollars', 'google', 'money', 'online', 'pay', 'payment', 'play', 'shop', 'shopping', 'store'],
+)]
 final class ShopTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['apartment', 'architecture', 'building', 'business', 'domain', 'estate', 'home', 'place', 'real', 'residence', 'residential', 'shelter', 'web', 'www'],
+)]
 final class DomainIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['accident', 'auto', 'automobile', 'car', 'cars', 'check', 'collision', 'confirm', 'correct', 'crash', 'direction', 'done', 'enter', 'maps', 'mark', 'no', 'ok', 'okay', 'select', 'tick', 'transportation', 'vehicle', 'yes'],
+)]
 final class NoCrashOutlinedIcon extends SVG
 {
     public function __construct()

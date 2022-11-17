@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['collection', 'data', 'doc', 'document', 'file', 'folder', 'folders', 'image', 'landscape', 'media', 'mountain', 'mountains', 'perm', 'photo', 'photography', 'picture', 'storage'],
+)]
 final class PermMediaIcon extends SVG
 {
     public function __construct()

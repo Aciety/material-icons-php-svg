@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['+', 'add', 'alternate', 'image', 'landscape', 'mountain', 'mountains', 'new', 'photo', 'photography', 'picture', 'plus', 'symbol'],
+)]
 final class AddPhotoAlternateSharpIcon extends SVG
 {
     public function __construct()

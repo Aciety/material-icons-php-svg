@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['app', 'extended', 'extension', 'game', 'jigsaw', 'plugin add', 'puzzle', 'shape'],
+)]
 final class ExtensionSharpIcon extends SVG
 {
     public function __construct()

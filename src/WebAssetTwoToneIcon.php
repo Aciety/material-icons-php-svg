@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['-website', 'app', 'application desktop', 'asset', 'browser', 'design', 'download', 'image', 'interface', 'internet', 'layout', 'screen', 'site', 'ui', 'ux', 'video', 'web', 'website', 'window', 'www'],
+)]
 final class WebAssetTwoToneIcon extends SVG
 {
     public function __construct()

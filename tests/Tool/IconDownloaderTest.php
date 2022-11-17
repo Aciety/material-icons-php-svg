@@ -103,11 +103,17 @@ final class IconDownloaderTest extends TestCase
             self::assertFileExists($this->directory.'/'.$expectedFile);
             self::assertXmlFileEqualsXmlFile($this->directory.'/'.$expectedFile, __DIR__.'/../Fixtures/'.$expectedFile);
         }
+
+        self::assertFileExists($this->directory.'/_categories.json');
+        self::assertJsonFileEqualsJsonFile($this->directory.'/_categories.json', __DIR__.'/../Fixtures/_categories.json');
+
+        self::assertFileExists($this->directory.'/_tags.json');
+        self::assertJsonFileEqualsJsonFile($this->directory.'/_tags.json', __DIR__.'/../Fixtures/_tags.json');
     }
 
     public function testDownloadFail(): void
     {
-        $this->httpClient->setResponseFactory(static function (string $method, string $url, array $options) {
+        $this->httpClient->setResponseFactory(static function (string $method, string $url) {
             self::assertSame('GET', $method);
             self::assertSame('https://fonts.google.com/metadata/icons', $url);
 

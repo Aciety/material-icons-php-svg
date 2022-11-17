@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['alert', 'announcement', 'assistance', 'certified', 'details', 'help', 'i', 'info', 'information', 'privacy', 'private', 'protect', 'protection', 'security', 'service', 'shield', 'support', 'tip', 'verified'],
+)]
 final class PrivacyTipTwoToneIcon extends SVG
 {
     public function __construct()

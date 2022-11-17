@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['app', 'application', 'components', 'hamburger', 'interface', 'line', 'lines', 'menu', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
+)]
 final class MenuTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['architecture', 'base', 'basis', 'building', 'construction', 'estate', 'foundation', 'home', 'house', 'real', 'residential'],
+)]
 final class FoundationIcon extends SVG
 {
     public function __construct()

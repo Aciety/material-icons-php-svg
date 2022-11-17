@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['aspect', 'image', 'photo', 'photography', 'picture', 'ratio', 'rectangle', 'square'],
+)]
 final class ImageAspectRatioRoundedIcon extends SVG
 {
     public function __construct()

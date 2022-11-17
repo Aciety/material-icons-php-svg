@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['!', '360', 'alert', 'around', 'arrow', 'arrows', 'attention', 'caution', 'danger', 'direction', 'error', 'exclamation', 'important', 'inprogress', 'load', 'loading refresh', 'mark', 'notification', 'problem', 'renew', 'rotate', 'symbol', 'sync', 'turn', 'warning'],
+)]
 final class SyncProblemRoundedIcon extends SVG
 {
     public function __construct()

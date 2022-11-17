@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['app', 'application', 'arrow', 'components', 'direction', 'drop', 'interface', 'navigation', 'screen', 'site', 'ui', 'up', 'ux', 'web', 'website'],
+)]
 final class ArrowDropUpRoundedIcon extends SVG
 {
     public function __construct()

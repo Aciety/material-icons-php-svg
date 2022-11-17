@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['cell', 'cellular', 'data', 'internet', 'mobile', 'network', 'null', 'phone', 'signal', 'wifi', 'wireless'],
+)]
 final class SignalCellularNullOutlinedIcon extends SVG
 {
     public function __construct()

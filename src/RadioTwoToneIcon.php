@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['antenna', 'audio', 'device', 'frequency', 'hardware', 'listen', 'media', 'music', 'player', 'radio', 'signal', 'tune'],
+)]
 final class RadioTwoToneIcon extends SVG
 {
     public function __construct()

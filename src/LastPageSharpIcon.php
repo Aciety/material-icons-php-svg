@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['app', 'application', 'arrow', 'chevron', 'components', 'end', 'forward', 'interface', 'last', 'page', 'right', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
+)]
 final class LastPageSharpIcon extends SVG
 {
     public function __construct()

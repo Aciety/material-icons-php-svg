@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['disabled', 'edit', 'editing', 'effect', 'emoji', 'emotion', 'enabled', 'face', 'faces', 'image', 'natural', 'off', 'on', 'photo', 'photography', 'retouch', 'retouching', 'settings', 'slash', 'tag'],
+)]
 final class FaceRetouchingOffOutlinedIcon extends SVG
 {
     public function __construct()

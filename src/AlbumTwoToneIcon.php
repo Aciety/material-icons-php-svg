@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['album', 'artist', 'audio', 'bvb', 'cd', 'computer', 'data', 'disk', 'file', 'music', 'record', 'sound', 'storage', 'track'],
+)]
 final class AlbumTwoToneIcon extends SVG
 {
     public function __construct()

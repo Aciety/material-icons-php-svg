@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['adjust', 'arrow', 'arrows', 'camera', 'center', 'control', 'direction', 'left', 'move', 'right'],
+)]
 final class ControlCameraRoundedIcon extends SVG
 {
     public function __construct()

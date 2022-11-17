@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['cell', 'cellular', 'connection', 'data', 'disabled', 'enabled', 'internet', 'mobile', 'network', 'off', 'offline', 'on', 'phone', 'scan', 'service', 'signal', 'slash', 'speed', 'tethering', 'wifi', 'wireless'],
+)]
 final class WifiTetheringOffRoundedIcon extends SVG
 {
     public function __construct()

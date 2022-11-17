@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['active', 'alarm', 'alert', 'bell', 'chime', 'disabled', 'enabled', 'notifications', 'notify', 'off', 'offline', 'on', 'reminder', 'ring', 'slash', 'sound'],
+)]
 final class NotificationsOffOutlinedIcon extends SVG
 {
     public function __construct()

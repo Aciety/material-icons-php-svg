@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['data', 'doc', 'document', 'drive', 'file', 'find', 'folder', 'folders', 'glass', 'in', 'look', 'magnify', 'magnifying', 'page', 'paper', 'search', 'see', 'sheet', 'slide', 'writing'],
+)]
 final class FindInPageRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['5', '7', 'adjust', 'adjustments', 'area', 'by', 'crop', 'editing', 'frame', 'image', 'images', 'photo', 'photos', 'rectangle', 'settings', 'size', 'square'],
+)]
 final class Crop75OutlinedIcon extends SVG
 {
     public function __construct()

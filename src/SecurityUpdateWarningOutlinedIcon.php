@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['!', 'Android', 'OS', 'alert', 'attention', 'caution', 'danger', 'device', 'download', 'error', 'exclamation', 'hardware', 'iOS', 'important', 'mark', 'mobile', 'notification', 'phone', 'security', 'symbol', 'tablet', 'update', 'warning'],
+)]
 final class SecurityUpdateWarningOutlinedIcon extends SVG
 {
     public function __construct()

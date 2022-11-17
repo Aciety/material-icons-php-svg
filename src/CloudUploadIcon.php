@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['app', 'application', 'arrow', 'backup', 'cloud', 'connection', 'download', 'drive', 'files', 'folders', 'internet', 'network', 'sky', 'storage', 'up', 'upload'],
+)]
 final class CloudUploadIcon extends SVG
 {
     public function __construct()

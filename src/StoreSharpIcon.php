@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bill', 'building', 'business', 'card', 'cash', 'coin', 'commerce', 'company', 'credit', 'currency', 'dollars', 'market', 'money', 'online', 'pay', 'payment', 'shop', 'shopping', 'store', 'storefront'],
+)]
 final class StoreSharpIcon extends SVG
 {
     public function __construct()

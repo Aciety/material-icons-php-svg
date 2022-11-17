@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bill', 'booth', 'car', 'card', 'cash', 'coin', 'commerce', 'credit', 'currency', 'dollars', 'highway', 'money', 'online', 'pay', 'payment', 'ticket', 'toll'],
+)]
 final class TollIcon extends SVG
 {
     public function __construct()

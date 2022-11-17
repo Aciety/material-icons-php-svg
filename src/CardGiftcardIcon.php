@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['account', 'balance', 'bill', 'card', 'cart', 'cash', 'certificate', 'coin', 'commerce', 'credit', 'currency', 'dollars', 'gift', 'giftcard', 'money', 'online', 'pay', 'payment', 'present', 'shopping'],
+)]
 final class CardGiftcardIcon extends SVG
 {
     public function __construct()

@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['Android', 'OS', 'chrome', 'desktop', 'device', 'display', 'fix', 'hardware', 'iOS', 'install', 'mac', 'monitor', 'place', 'pwa', 'screen', 'web', 'window'],
+)]
 final class InstallDesktopTwoToneIcon extends SVG
 {
     public function __construct()

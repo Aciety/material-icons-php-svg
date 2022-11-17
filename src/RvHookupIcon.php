@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['arrow', 'attach', 'automobile', 'automotive', 'back', 'car', 'cars', 'connect', 'direction', 'hookup', 'left', 'maps', 'public', 'right', 'rv', 'trailer', 'transportation', 'travel', 'truck', 'van', 'vehicle'],
+)]
 final class RvHookupIcon extends SVG
 {
     public function __construct()

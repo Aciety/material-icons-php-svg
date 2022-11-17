@@ -16,7 +16,7 @@ use function str_replace;
 
 final class IconDownloader
 {
-    private const THEME_MAP = [
+    public const THEME_MAP = [
         'baseline' => '', // filled
         'outline' => '_outlined',
         'round' => '_round',
@@ -24,12 +24,30 @@ final class IconDownloader
         'sharp' => '_sharp',
     ];
 
-    private const THEME_FILE_MAP = [
+    public const THEME_FILE_MAP = [
         'baseline' => '', // filled
         'outline' => '_outlined',
         'round' => '_rounded',
         'twotone' => '_two_tone',
         'sharp' => '_sharp',
+    ];
+
+    /**
+     * @var array<non-empty-string, list<non-empty-string>>
+     */
+    private const TAGS_REPLACEMENT = [
+        'dynamic_feed' => [
+            'layer', 'live', 'mail_outline', 'multiple', 'post', 'refresh', 'update',
+        ],
+        'grade' => [
+            'achievement', 'favorite_news', 'important', 'likes', 'marked', 'rated', 'rating', 'reward', 'saved',
+            'shape', 'special', 'star_border_purple500', 'star_outline',
+        ],
+        'grading' => [
+            'approve', 'check', 'complete', 'document', 'done', 'feedback', 'grade', 'mark', 'ok', 'reviewed', 'select',
+            'star_boarder', 'star_border_purple500', 'star_outline', 'star_purple500', 'star_rate', 'tick', 'validate',
+            'verified', 'writing', 'yes',
+        ],
     ];
 
     public function __construct(
@@ -49,12 +67,17 @@ final class IconDownloader
         }
 
         $text = $response->getContent();
-        /** @var array{icons: list<array{name: non-empty-string, version: int}>} $data */
+        /** @var array{icons: list<array{name: non-empty-string, version: int, categories: list<non-empty-string>, tags: list<non-empty-string>}>} $data */
         $data = json_decode(str_replace(")]}'", '', $text), true, 512, JSON_THROW_ON_ERROR);
         $icons = $data['icons'];
         $responses = [];
+        $categories = [];
+        $tags = [];
 
         foreach ($icons as $icon) {
+            $categories[$icon['name']] = $icon['categories'];
+            $tags[$icon['name']] = self::TAGS_REPLACEMENT[$icon['name']] ?? $icon['tags'];
+
             foreach (self::THEME_MAP as $k => $v) {
                 $formattedTheme = implode('', explode('_', $v));
 
@@ -70,5 +93,8 @@ final class IconDownloader
 
             file_put_contents($dir.'/'.$fileName, $content);
         }
+
+        file_put_contents($dir.'/_categories.json', json_encode($categories, JSON_THROW_ON_ERROR));
+        file_put_contents($dir.'/_tags.json', json_encode($tags, JSON_THROW_ON_ERROR));
     }
 }

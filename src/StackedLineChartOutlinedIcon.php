@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['analytics', 'chart', 'data', 'diagram', 'graph', 'infographic', 'line', 'measure', 'metrics', 'stacked', 'statistics', 'tracking'],
+)]
 final class StackedLineChartOutlinedIcon extends SVG
 {
     public function __construct()

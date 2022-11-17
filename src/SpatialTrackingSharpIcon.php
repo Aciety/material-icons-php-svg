@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['[offline]', 'audio', 'disabled', 'enabled', 'music', 'note', 'off', 'on', 'slash', 'sound', 'spatial', 'tracking'],
+)]
 final class SpatialTrackingSharpIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['analytics', 'bar', 'bars', 'chart', 'data', 'diagram', 'donut', 'graph', 'infographic', 'measure', 'metrics', 'off', 'on', 'ring', 'saver', 'statistics', 'tracking'],
+)]
 final class DataSaverOffIcon extends SVG
 {
     public function __construct()

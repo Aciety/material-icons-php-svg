@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['dining', 'disabled', 'eat', 'enabled', 'food', 'fork', 'knife', 'meal', 'meals', 'no', 'off', 'on', 'restaurant', 'slash', 'spoon', 'utensils'],
+)]
 final class NoMealsRoundedIcon extends SVG
 {
     public function __construct()

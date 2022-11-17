@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['angry', 'disappointed', 'dislike', 'dissatisfied', 'emotions', 'expressions', 'face', 'feelings', 'frown', 'mood', 'person', 'sad', 'sentiment', 'survey', 'unhappy', 'unsatisfied', 'upset'],
+)]
 final class SentimentDissatisfiedTwoToneIcon extends SVG
 {
     public function __construct()

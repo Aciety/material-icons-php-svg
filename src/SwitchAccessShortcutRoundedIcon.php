@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['access', 'arrow', 'arrows', 'direction', 'navigation', 'new', 'north', 'shortcut', 'star', 'switch', 'symbol', 'up'],
+)]
 final class SwitchAccessShortcutRoundedIcon extends SVG
 {
     public function __construct()

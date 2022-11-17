@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['circle', 'dot', 'fiber', 'manual', 'play', 'record', 'watch'],
+)]
 final class FiberManualRecordRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['home'],
+    tags: ['body', 'connection', 'human', 'network', 'people', 'person', 'scan', 'sensors', 'signal', 'wireless'],
+)]
 final class SensorOccupiedOutlinedIcon extends SVG
 {
     public function __construct()

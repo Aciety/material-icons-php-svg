@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['bubble', 'chat', 'comment', 'communicate', 'disabled', 'enabled', 'format', 'list', 'message', 'notes', 'off', 'on', 'slash', 'speaker', 'speech', 'text'],
+)]
 final class SpeakerNotesOffIcon extends SVG
 {
     public function __construct()

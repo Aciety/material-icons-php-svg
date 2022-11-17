@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['disabled', 'enabled', 'encryption', 'error', 'gmail', 'lock', 'locked', 'no', 'off', 'on', 'slash'],
+)]
 final class NoEncryptionGmailerrorredRoundedIcon extends SVG
 {
     public function __construct()

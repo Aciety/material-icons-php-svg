@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['T', 'add', 'alphabet', 'character', 'field', 'fields', 'font', 'input', 'letter', 'symbol', 'text', 'type'],
+)]
 final class TextFieldsIcon extends SVG
 {
     public function __construct()

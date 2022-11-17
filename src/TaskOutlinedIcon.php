@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['approve', 'check', 'complete', 'data', 'doc', 'document', 'done', 'drive', 'file', 'folder', 'folders', 'mark', 'ok', 'page', 'paper', 'select', 'sheet', 'slide', 'task', 'tick', 'validate', 'verified', 'writing', 'yes'],
+)]
 final class TaskOutlinedIcon extends SVG
 {
     public function __construct()

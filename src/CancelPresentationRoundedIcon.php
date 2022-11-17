@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['cancel', 'close', 'device', 'exit', 'no', 'present', 'presentation', 'quit', 'remove', 'screen', 'slide', 'stop', 'website', 'window', 'x'],
+)]
 final class CancelPresentationRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['approve', 'calendar', 'cancel', 'cancellation', 'check', 'complete', 'date', 'day', 'done', 'event', 'exit', 'free', 'mark', 'month', 'no', 'ok', 'remove', 'schedule', 'select', 'stop', 'tick', 'validate', 'verified', 'x', 'yes'],
+)]
 final class FreeCancellationRoundedIcon extends SVG
 {
     public function __construct()

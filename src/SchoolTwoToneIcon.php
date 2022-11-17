@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['academy', 'achievement', 'cap', 'class', 'college', 'education', 'graduation', 'hat', 'knowledge', 'learning', 'school', 'university'],
+)]
 final class SchoolTwoToneIcon extends SVG
 {
     public function __construct()

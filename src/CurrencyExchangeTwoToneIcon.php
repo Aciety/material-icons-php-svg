@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['360', 'around', 'arrow', 'arrows', 'cash', 'coin', 'commerce', 'currency', 'direction', 'dollars', 'exchange', 'inprogress', 'money', 'pay', 'renew', 'rotate', 'sync', 'turn', 'universal'],
+)]
 final class CurrencyExchangeTwoToneIcon extends SVG
 {
     public function __construct()

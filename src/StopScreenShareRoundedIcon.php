@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['Android', 'OS', 'arrow', 'cast', 'chrome', 'device', 'disabled', 'display', 'enabled', 'hardware', 'iOS', 'laptop', 'mac', 'mirror', 'monitor', 'off', 'offline', 'on', 'screen', 'share', 'slash', 'steam', 'stop', 'streaming', 'web', 'window'],
+)]
 final class StopScreenShareRoundedIcon extends SVG
 {
     public function __construct()

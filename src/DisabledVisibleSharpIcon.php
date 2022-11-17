@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['cancel', 'close', 'disabled', 'exit', 'eye', 'no', 'on', 'quit', 'remove', 'reveal', 'see', 'show', 'stop', 'view', 'visibility', 'visible'],
+)]
 final class DisabledVisibleSharpIcon extends SVG
 {
     public function __construct()

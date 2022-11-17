@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['account', 'alt', 'emoji', 'face', 'happy', 'human', 'people', 'person', 'profile', 'satisfied', 'sentiment', 'smile', 'user'],
+)]
 final class SentimentSatisfiedAltIcon extends SVG
 {
     public function __construct()

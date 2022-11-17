@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['places'],
+    tags: ['bolt', 'camera', 'disabled', 'enabled', 'flash', 'image', 'lightning', 'no', 'off', 'on', 'photo', 'photography', 'picture', 'slash', 'thunderbolt'],
+)]
 final class NoFlashIcon extends SVG
 {
     public function __construct()

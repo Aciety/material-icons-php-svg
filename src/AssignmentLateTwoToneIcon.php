@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['!', 'alert', 'assignment', 'attention', 'caution', 'clipboard', 'danger', 'doc', 'document', 'error', 'exclamation', 'important', 'late', 'mark', 'notification', 'symbol', 'warning'],
+)]
 final class AssignmentLateTwoToneIcon extends SVG
 {
     public function __construct()

@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['!', 'alert', 'attention', 'automobile', 'bike', 'car', 'cars', 'caution', 'danger', 'direction', 'error', 'exclamation', 'important', 'maps', 'mark', 'notification', 'public', 'railway', 'scooter', 'subway', 'symbol', 'train', 'transportation', 'vehicle', 'vespa', 'warning'],
+)]
 final class RailwayAlertTwoToneIcon extends SVG
 {
     public function __construct()

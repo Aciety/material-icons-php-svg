@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['draft', 'fax', 'ink', 'local', 'machine', 'office', 'paper', 'print', 'printer', 'printshop', 'send'],
+)]
 final class LocalPrintshopOutlinedIcon extends SVG
 {
     public function __construct()

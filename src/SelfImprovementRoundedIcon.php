@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['body', 'calm', 'care', 'chi', 'human', 'improvement', 'meditate', 'meditation', 'people', 'person', 'relax', 'self', 'sitting', 'wellbeing', 'yoga', 'zen'],
+)]
 final class SelfImprovementRoundedIcon extends SVG
 {
     public function __construct()

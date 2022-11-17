@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['arrow', 'arrows', 'compress', 'enlarge', 'expand', 'grow', 'move', 'push', 'together'],
+)]
 final class ExpandRoundedIcon extends SVG
 {
     public function __construct()

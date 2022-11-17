@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['connection', 'disabled', 'enabled', 'network', 'off', 'on', 'scan', 'sensors', 'signal', 'slash', 'wireless'],
+)]
 final class SensorsOffIcon extends SVG
 {
     public function __construct()

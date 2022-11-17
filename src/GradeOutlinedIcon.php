@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['achievement', 'favorite_news', 'important', 'likes', 'marked', 'rated', 'rating', 'reward', 'saved', 'shape', 'special', 'star_border_purple500', 'star_outline'],
+)]
 final class GradeOutlinedIcon extends SVG
 {
     public function __construct()

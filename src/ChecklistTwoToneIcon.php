@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['align', 'alignment', 'approve', 'check', 'checklist', 'complete', 'doc', 'done', 'edit', 'editing', 'editor', 'format', 'list', 'mark', 'notes', 'ok', 'select', 'sheet', 'spreadsheet', 'text', 'tick', 'type', 'validate', 'verified', 'writing', 'yes'],
+)]
 final class ChecklistTwoToneIcon extends SVG
 {
     public function __construct()

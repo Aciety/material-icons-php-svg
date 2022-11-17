@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['file'],
+    tags: ['account', 'collaboration', 'data', 'doc', 'document', 'drive', 'face', 'file', 'folder', 'human', 'people', 'person', 'profile', 'share', 'shared', 'sheet', 'slide', 'storage', 'team', 'user'],
+)]
 final class FolderSharedSharpIcon extends SVG
 {
     public function __construct()

@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['architecture', 'automobile', 'building', 'car', 'cars', 'direction', 'emoji', 'estate', 'maps', 'place', 'public', 'real', 'residence', 'residential', 'shelter', 'transportation', 'travel', 'vehicle'],
+)]
 final class EmojiTransportationTwoToneIcon extends SVG
 {
     public function __construct()

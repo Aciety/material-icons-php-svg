@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['3', '3p', 'account', 'avatar', 'bubble', 'chat', 'comment', 'communicate', 'face', 'human', 'message', 'party', 'people', 'person', 'profile', 'speech', 'user'],
+)]
 final class ThreePTwoToneIcon extends SVG
 {
     public function __construct()

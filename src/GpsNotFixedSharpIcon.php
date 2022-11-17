@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['destination', 'direction', 'disabled', 'enabled', 'gps', 'location', 'maps', 'not fixed', 'off', 'on', 'online', 'place', 'pointer', 'slash', 'tracking'],
+)]
 final class GpsNotFixedSharpIcon extends SVG
 {
     public function __construct()

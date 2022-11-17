@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['toggle'],
+    tags: ['bullet', 'button', 'circle', 'deselected', 'form', 'off', 'on', 'point', 'radio', 'record', 'select', 'toggle', 'unchecked'],
+)]
 final class RadioButtonUncheckedOutlinedIcon extends SVG
 {
     public function __construct()

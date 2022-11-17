@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['calendar', 'compose', 'create', 'date', 'day', 'draft', 'edit', 'editing', 'event', 'month', 'pen', 'pencil', 'schedule', 'write', 'writing'],
+)]
 final class EditCalendarTwoToneIcon extends SVG
 {
     public function __construct()

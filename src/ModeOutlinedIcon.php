@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['compose', 'create', 'draft', 'draw', 'edit', 'mode', 'pen', 'pencil', 'write'],
+)]
 final class ModeOutlinedIcon extends SVG
 {
     public function __construct()

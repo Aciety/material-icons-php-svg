@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['app', 'application', 'arrow', 'box', 'components', 'interface', 'launch', 'new', 'open', 'screen', 'site', 'ui', 'ux', 'web', 'website', 'window'],
+)]
 final class LaunchRoundedIcon extends SVG
 {
     public function __construct()

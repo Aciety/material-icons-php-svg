@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['arrow', 'data', 'disabled', 'down', 'enabled', 'internet', 'mobile', 'network', 'off', 'on', 'slash', 'speed', 'up', 'wifi', 'wireless'],
+)]
 final class MobiledataOffSharpIcon extends SVG
 {
     public function __construct()

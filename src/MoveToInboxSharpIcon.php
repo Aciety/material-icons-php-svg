@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['content'],
+    tags: ['archive', 'arrow', 'down', 'email', 'envelop', 'inbox', 'incoming', 'letter', 'mail', 'message', 'move to', 'send'],
+)]
 final class MoveToInboxSharpIcon extends SVG
 {
     public function __construct()

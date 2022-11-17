@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['arrow', 'call', 'callback', 'cell', 'contact', 'device', 'down', 'hardware', 'mobile', 'phone', 'telephone'],
+)]
 final class PhoneCallbackIcon extends SVG
 {
     public function __construct()

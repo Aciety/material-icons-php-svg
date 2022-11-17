@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['hardware'],
+    tags: ['browser', 'disabled', 'enabled', 'internet', 'not', 'off', 'on', 'page', 'screen', 'site', 'slash', 'supported', 'web', 'website', 'www'],
+)]
 final class BrowserNotSupportedOutlinedIcon extends SVG
 {
     public function __construct()

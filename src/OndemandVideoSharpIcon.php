@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['notification'],
+    tags: ['Android', 'OS', 'chrome', 'demand', 'desktop', 'device', 'hardware', 'iOS', 'mac', 'monitor', 'ondemand', 'play', 'television', 'tv', 'video', 'web', 'window'],
+)]
 final class OndemandVideoSharpIcon extends SVG
 {
     public function __construct()

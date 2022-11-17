@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['editor'],
+    tags: ['compose', 'create', 'design', 'draft', 'draw', 'edit', 'editing', 'input', 'pen', 'pencil', 'write', 'writing'],
+)]
 final class DrawRoundedIcon extends SVG
 {
     public function __construct()

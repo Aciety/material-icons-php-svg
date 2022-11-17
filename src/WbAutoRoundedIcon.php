@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['A', 'W', 'alphabet', 'auto', 'automatic', 'balance', 'character', 'edit', 'editing', 'font', 'image', 'letter', 'photo', 'photography', 'symbol', 'text', 'type', 'white', 'wp'],
+)]
 final class WbAutoRoundedIcon extends SVG
 {
     public function __construct()

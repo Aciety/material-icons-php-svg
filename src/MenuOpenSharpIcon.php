@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['navigation'],
+    tags: ['app', 'application', 'arrow', 'components', 'hamburger', 'interface', 'left', 'line', 'lines', 'menu', 'open', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
+)]
 final class MenuOpenSharpIcon extends SVG
 {
     public function __construct()

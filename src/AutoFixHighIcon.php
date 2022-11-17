@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['adjust', 'auto', 'edit', 'editing', 'enhance', 'fix', 'high', 'pen', 'stars', 'tool'],
+)]
 final class AutoFixHighIcon extends SVG
 {
     public function __construct()

@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['circle', 'control', 'controls', 'music', 'pause', 'play', 'square', 'stop', 'video'],
+)]
 final class StopCircleRoundedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['toggle'],
+    tags: ['blank', 'box', 'button', 'check', 'component', 'control', 'deselected', 'empty', 'form', 'outline', 'select', 'selection', 'square', 'tick', 'toggle', 'ui'],
+)]
 final class CheckBoxOutlineBlankOutlinedIcon extends SVG
 {
     public function __construct()

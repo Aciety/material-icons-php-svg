@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['accessible', 'alphabet', 'caption', 'cc', 'character', 'closed', 'decoder', 'disabled', 'enabled', 'font', 'language', 'letter', 'media', 'movies', 'off', 'on', 'slash', 'subtitle', 'subtitles', 'symbol', 'text', 'tv', 'type'],
+)]
 final class ClosedCaptionDisabledTwoToneIcon extends SVG
 {
     public function __construct()

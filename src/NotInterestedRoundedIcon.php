@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['cancel', 'close', 'dislike', 'exit', 'interested', 'no', 'not', 'off', 'quit', 'remove', 'stop', 'x'],
+)]
 final class NotInterestedRoundedIcon extends SVG
 {
     public function __construct()

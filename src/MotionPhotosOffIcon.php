@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['image'],
+    tags: ['animation', 'circle', 'disabled', 'enabled', 'motion', 'off', 'on', 'photos', 'slash', 'video'],
+)]
 final class MotionPhotosOffIcon extends SVG
 {
     public function __construct()

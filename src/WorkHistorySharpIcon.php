@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['arrow', 'back', 'backwards', 'bag', 'baggage', 'briefcase', 'business', 'case', 'clock', 'date', 'history', 'job', 'refresh', 'renew', 'reverse', 'rotate', 'schedule', 'suitcase', 'time', 'turn', 'work'],
+)]
 final class WorkHistorySharpIcon extends SVG
 {
     public function __construct()

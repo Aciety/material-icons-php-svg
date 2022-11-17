@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['brackets', 'code', 'css', 'develop', 'developer', 'disabled', 'enabled', 'engineer', 'engineering', 'html', 'off', 'on', 'platform', 'slash'],
+)]
 final class CodeOffIcon extends SVG
 {
     public function __construct()

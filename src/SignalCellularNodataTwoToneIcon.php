@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['cell', 'cellular', 'data', 'internet', 'mobile', 'network', 'no', 'nodata', 'offline', 'phone', 'quit', 'signal', 'wifi', 'wireless', 'x'],
+)]
 final class SignalCellularNodataTwoToneIcon extends SVG
 {
     public function __construct()

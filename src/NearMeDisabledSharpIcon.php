@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['destination', 'direction', 'disabled', 'enabled', 'location', 'maps', 'me', 'navigation', 'near', 'off', 'on', 'pin', 'place', 'point', 'slash'],
+)]
 final class NearMeDisabledSharpIcon extends SVG
 {
     public function __construct()

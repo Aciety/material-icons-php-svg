@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['destination', 'direction', 'edit', 'location', 'maps', 'pen', 'pencil', 'pin', 'place', 'stop'],
+)]
 final class EditLocationIcon extends SVG
 {
     public function __construct()

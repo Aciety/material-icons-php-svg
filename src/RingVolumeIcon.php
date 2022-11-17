@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['communication'],
+    tags: ['call', 'calling', 'cell', 'contact', 'device', 'hardware', 'incoming', 'mobile', 'phone', 'ring', 'ringer', 'sound', 'telephone', 'volume'],
+)]
 final class RingVolumeIcon extends SVG
 {
     public function __construct()

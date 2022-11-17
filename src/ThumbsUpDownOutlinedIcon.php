@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['dislike', 'down', 'favorite', 'fingers', 'gesture', 'hands', 'like', 'rate', 'rating', 'thumbs', 'up'],
+)]
 final class ThumbsUpDownOutlinedIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['calibration', 'compass', 'connection', 'internet', 'location', 'maps', 'network', 'refresh', 'service', 'signal', 'wifi', 'wireless'],
+)]
 final class CompassCalibrationOutlinedIcon extends SVG
 {
     public function __construct()

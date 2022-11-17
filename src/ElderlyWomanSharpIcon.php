@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['body', 'cane', 'elderly', 'female', 'gender', 'girl', 'human', 'lady', 'old', 'people', 'person', 'senior', 'social', 'symbol', 'woman', 'women'],
+)]
 final class ElderlyWomanSharpIcon extends SVG
 {
     public function __construct()

@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['maps'],
+    tags: ['?', 'assistance', 'destination', 'direction', 'help', 'info', 'information', 'listed', 'location', 'maps', 'not', 'pin', 'place', 'punctuation', 'question mark', 'stop', 'support', 'symbol'],
+)]
 final class NotListedLocationSharpIcon extends SVG
 {
     public function __construct()

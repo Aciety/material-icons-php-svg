@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['social'],
+    tags: ['?', 'assistance', 'behavior', 'body', 'brain', 'cognitive', 'function', 'gear', 'head', 'help', 'human', 'info', 'information', 'intellectual', 'mental', 'mind', 'people', 'person', 'preferences', 'psychiatric', 'psychology', 'punctuation', 'question mark', 'science', 'settings', 'social', 'support', 'symbol', 'therapy', 'thinking', 'thoughts'],
+)]
 final class PsychologyAltRoundedIcon extends SVG
 {
     public function __construct()

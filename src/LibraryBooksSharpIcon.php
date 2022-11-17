@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['av'],
+    tags: ['add', 'album', 'audio', 'book', 'books', 'collection', 'library', 'read', 'reading'],
+)]
 final class LibraryBooksSharpIcon extends SVG
 {
     public function __construct()

@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['action'],
+    tags: ['alt', 'arrow', 'arrows', 'horizontal', 'internet', 'sync', 'technology', 'up', 'update', 'wifi'],
+)]
 final class SyncAltOutlinedIcon extends SVG
 {
     public function __construct()

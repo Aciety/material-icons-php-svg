@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Aciety\Component\MaterialIcons;
 
+use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\SVG;
 
+#[MaterialIcon(
+    categories: ['device'],
+    tags: ['bad', 'bar', 'cancel', 'cell', 'cellular', 'close', 'data', 'exit', 'internet', 'mobile', 'network', 'no', 'phone', 'quit', 'remove', 'signal', 'stop', 'wifi', 'wireless', 'x'],
+)]
 final class SignalWifiBadTwoToneIcon extends SVG
 {
     public function __construct()
