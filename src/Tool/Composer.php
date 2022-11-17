@@ -42,12 +42,12 @@ final class Composer
             return;
         }
 
-        $event->getIO()->write(sprintf('Removing "%d" icons from "%s" package.', $count, 'aciety/material-icons'));
+        $event->getIO()->write(sprintf('Removing %d %s from "%s" package.', $count, $count > 1 ? 'icons' : 'icon', 'aciety/material-icons'));
 
         $filesystem = $filesystem ?? new Filesystem();
 
         foreach ($finder as $file) {
-            $filesystem->remove($file->getRealPath());
+            $filesystem->remove($file->getPathname());
         }
     }
 }

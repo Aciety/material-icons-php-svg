@@ -47,7 +47,7 @@ Add this config to your composer.json: (it accepts globs, strings or regexes)
             "exclude": [
                 "AbcIcon.php",
                  "*TwoToneIcon*",
-                 "/^\d/"
+                 "/SharpIcon\.php$/"
             ]
         }
     }

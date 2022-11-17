@@ -18,7 +18,9 @@ final class MuiFilenameRewriterTest extends TestCase
     }
 
     /**
-     * @testWith ["3d_rotation_two_tone_24px.svg", "ThreeDRotationTwoToneIcon.php"]
+     * @testWith ["123_outlined_24px.svg", "OneTwoThreeOutlinedIcon.php"]
+     *           ["6_ft_apart_24px.svg", "SixFtApartIcon.php"]
+     *           ["3d_rotation_two_tone_24px.svg", "ThreeDRotationTwoToneIcon.php"]
      *           ["3p_rounded_24px.svg", "ThreePRoundedIcon.php"]
      *           ["30fps_select_sharp_24px.svg", "ThirtyFpsSelectSharpIcon.php"]
      *           ["60fps_select_sharp_24px.svg", "SixtyFpsSelectSharpIcon.php"]
