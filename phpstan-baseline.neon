@@ -31,22 +31,12 @@ parameters:
 			path: src/Tool/Composer.php
 
 		-
-			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
-			count: 2
-			path: src/Tool/IconBuilder.php
-
-		-
 			message: "#^Method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:normalizePoints\\(\\) should return non\\-empty\\-string but returns string\\.$#"
 			count: 1
 			path: src/Tool/IconBuilder.php
 
 		-
 			message: "#^Parameter \\#1 \\$points of static method Aciety\\\\Component\\\\MaterialIcons\\\\Tool\\\\IconBuilder\\:\\:normalizePoints\\(\\) expects list\\<array\\{float\\|int, float\\|int\\}\\>, array\\<array\\> given\\.$#"
-			count: 2
-			path: src/Tool/IconBuilder.php
-
-		-
-			message: "#^Strict comparison using \\!\\=\\= between string and null will always evaluate to true\\.$#"
 			count: 2
 			path: src/Tool/IconBuilder.php
 
