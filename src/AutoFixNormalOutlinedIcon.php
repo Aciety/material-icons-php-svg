@@ -9,20 +9,18 @@ use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['image'],
     tags: ['auto', 'edit', 'erase', 'fix', 'magic', 'modify', 'normal', 'star', 'stars', 'wand'],
 )]
-final class AutoFixNormalOutlinedIcon extends SVG
+final class AutoFixNormalOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: '0', y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

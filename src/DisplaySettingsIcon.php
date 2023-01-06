@@ -9,20 +9,18 @@ use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['Android', 'OS', 'application', 'change', 'chrome', 'desktop', 'details', 'device', 'display', 'gear', 'hardware', 'iOS', 'info', 'information', 'mac', 'monitor', 'options', 'personal', 'screen', 'service', 'settings', 'web', 'window'],
 )]
-final class DisplaySettingsIcon extends SVG
+final class DisplaySettingsIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

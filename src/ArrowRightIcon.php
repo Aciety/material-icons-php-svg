@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['navigation'],
     tags: ['app', 'application', 'arrow', 'components', 'direction', 'interface', 'navigation', 'right', 'screen', 'site', 'ui', 'ux', 'web', 'website'],
 )]
-final class ArrowRightIcon extends SVG
+final class ArrowRightIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M10 17l5-5-5-5v10z');
         $doc->addChild($l0I0);
         $l0I1 = new SVGPath(d: 'M0 24V0h24v24H0z');

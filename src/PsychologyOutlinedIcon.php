@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['social'],
     tags: ['behavior', 'body', 'brain', 'cognitive', 'function', 'gear', 'head', 'human', 'intellectual', 'mental', 'mind', 'people', 'person', 'preferences', 'psychiatric', 'psychology', 'science', 'settings', 'social', 'therapy', 'thinking', 'thoughts'],
 )]
-final class PsychologyOutlinedIcon extends SVG
+final class PsychologyOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

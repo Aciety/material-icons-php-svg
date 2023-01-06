@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['device'],
     tags: ['!', 'alert', 'attention', 'caution', 'cell', 'cellular', 'connection', 'danger', 'data', 'error', 'exclamation', 'important', 'internet', 'mark', 'mobile', 'network', 'notification', 'phone', 'rounded', 'scan', 'service', 'signal', 'speed', 'symbol', 'tethering', 'warning', 'wifi', 'wireless'],
 )]
-final class WifiTetheringErrorRoundedIcon extends SVG
+final class WifiTetheringErrorRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGPath(d: 'M0,0h24v24H0V0z');
         $l1I0->setStyle('fill', 'none');

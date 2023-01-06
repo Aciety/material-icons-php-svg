@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['notification'],
     tags: ['bubble', 'chat', 'comment', 'communicate', 'feedback', 'image', 'landscape', 'message', 'mms', 'mountain', 'mountains', 'multimedia', 'photo', 'photography', 'picture', 'speech'],
 )]
-final class MmsIcon extends SVG
+final class MmsIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

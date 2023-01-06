@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['notification'],
     tags: ['bathroom', 'closet', 'female', 'male', 'man', 'restroom', 'room', 'wash', 'water', 'wc', 'women'],
 )]
-final class WcOutlinedIcon extends SVG
+final class WcOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M.01 0h24v24h-24V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

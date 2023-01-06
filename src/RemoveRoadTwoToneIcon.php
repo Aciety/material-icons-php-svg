@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['-', 'cancel', 'close', 'destination', 'direction', 'exit', 'highway', 'maps', 'minus', 'new', 'no', 'remove', 'road', 'stop', 'street', 'symbol', 'traffic', 'x'],
 )]
-final class RemoveRoadTwoToneIcon extends SVG
+final class RemoveRoadTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

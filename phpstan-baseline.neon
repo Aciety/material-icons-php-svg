@@ -1,7 +1,17 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Parameter \\#1 \\$files of method Symfony\\\\Component\\\\Filesystem\\\\Filesystem\\:\\:remove\\(\\) expects iterable\\|string, array\\<int, string\\>\\|false given\\.$#"
+			message: "#^PHPDoc tag @var for variable \\$categoriesIterator contains generic class AppendIterator but does not specify its types\\: TKey, TValue, TIterator$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^PHPDoc tag @var for variable \\$svgIconIterator contains generic class AppendIterator but does not specify its types\\: TKey, TValue, TIterator$#"
+			count: 1
+			path: bin/build.php
+
+		-
+			message: "#^PHPDoc tag @var for variable \\$tagsIterator contains generic class AppendIterator but does not specify its types\\: TKey, TValue, TIterator$#"
 			count: 1
 			path: bin/build.php
 

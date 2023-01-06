@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['editor'],
     tags: ['T', 'alphabet', 'character', 'clear', 'disabled', 'doc', 'edit', 'editing', 'editor', 'enabled', 'font', 'format', 'letter', 'off', 'on', 'sheet', 'slash', 'spreadsheet', 'style', 'symbol', 'text', 'type', 'writing'],
 )]
-final class FormatClearTwoToneIcon extends SVG
+final class FormatClearTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

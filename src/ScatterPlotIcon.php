@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['editor'],
     tags: ['analytics', 'bar', 'bars', 'chart', 'circles', 'data', 'diagram', 'dot', 'graph', 'infographic', 'measure', 'metrics', 'plot', 'scatter', 'statistics', 'tracking'],
 )]
-final class ScatterPlotIcon extends SVG
+final class ScatterPlotIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

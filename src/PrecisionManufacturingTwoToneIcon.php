@@ -10,20 +10,18 @@ use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['social'],
     tags: ['arm', 'automatic', 'chain', 'conveyor', 'crane', 'factory', 'industry', 'machinery', 'manufacturing', 'mechanical', 'precision', 'production', 'repairing', 'robot', 'supply', 'warehouse'],
 )]
-final class PrecisionManufacturingTwoToneIcon extends SVG
+final class PrecisionManufacturingTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

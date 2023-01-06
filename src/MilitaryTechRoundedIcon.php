@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['social'],
     tags: ['army', 'award', 'badge', 'honor', 'medal', 'merit', 'military', 'order', 'privilege', 'prize', 'rank', 'reward', 'ribbon', 'soldier', 'star', 'status', 'tech', 'trophy', 'win', 'winner'],
 )]
-final class MilitaryTechRoundedIcon extends SVG
+final class MilitaryTechRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

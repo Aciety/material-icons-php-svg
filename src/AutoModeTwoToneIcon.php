@@ -9,20 +9,18 @@ use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['home'],
     tags: ['around', 'arrow', 'arrows', 'auto', 'direction', 'inprogress', 'load', 'loading refresh', 'mode', 'navigation', 'nest', 'renew', 'rotate', 'turn'],
 )]
-final class AutoModeTwoToneIcon extends SVG
+final class AutoModeTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

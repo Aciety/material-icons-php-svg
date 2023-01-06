@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['social'],
     tags: ['communicating', 'connect', 'contact', 'distance', 'people', 'signal', 'social', 'socialize', 'without'],
 )]
-final class ConnectWithoutContactOutlinedIcon extends SVG
+final class ConnectWithoutContactOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

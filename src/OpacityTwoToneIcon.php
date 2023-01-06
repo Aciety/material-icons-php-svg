@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['color', 'drop', 'droplet', 'hue', 'invert', 'inverted', 'opacity', 'palette', 'tone', 'water'],
 )]
-final class OpacityTwoToneIcon extends SVG
+final class OpacityTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M24 0H0v24h24V0zm0 0H0v24h24V0zM0 24h24V0H0v24z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['content'],
     tags: ['approve', 'ballot', 'check', 'complete', 'destination', 'direction', 'done', 'location', 'maps', 'mark', 'ok', 'pin', 'place', 'poll', 'select', 'stop', 'tick', 'to', 'validate election', 'verified', 'vote', 'where', 'yes'],
 )]
-final class WhereToVoteIcon extends SVG
+final class WhereToVoteIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

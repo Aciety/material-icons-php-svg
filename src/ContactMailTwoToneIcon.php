@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['communication'],
     tags: ['account', 'address', 'avatar', 'communicate', 'contact', 'email', 'face', 'human', 'info', 'information', 'mail', 'message', 'people', 'person', 'profile', 'user'],
 )]
-final class ContactMailTwoToneIcon extends SVG
+final class ContactMailTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

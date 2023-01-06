@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['!', 'alert', 'attention', 'bill', 'card', 'cart', 'cash', 'caution', 'coin', 'commerce', 'credit', 'currency', 'danger', 'dollars', 'error', 'exclamation', 'important', 'limits', 'mark', 'money', 'notification', 'online', 'pay', 'payment', 'production', 'quantity', 'shopping', 'symbol', 'warning'],
 )]
-final class ProductionQuantityLimitsTwoToneIcon extends SVG
+final class ProductionQuantityLimitsTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

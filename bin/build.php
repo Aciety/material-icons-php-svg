@@ -27,7 +27,9 @@ require __DIR__.'/../vendor/autoload.php';
         $srcDir = $input->getOption('src-dir');
         $buildDir = $input->getOption('build-dir');
 
-        (new Filesystem())->remove(glob($buildDir.'/*.php'));
+        /** @var list<non-empty-string> $glob */
+        $glob = glob($buildDir.'/*.php');
+        (new Filesystem())->remove(array_filter($glob, static fn (string $v) => $v !== $buildDir.'/SvgIcon.php'));
 
         /** @var AppendIterator<SplFileInfo> $categoriesIterator */
         $categoriesIterator = new AppendIterator();
@@ -80,6 +82,7 @@ require __DIR__.'/../vendor/autoload.php';
             $iconName = substr($fileName, 0, -4);
 
             $svg = SVG::fromFile($fileinfo->getPathname());
+            assert($svg !== null);
             $categories = $allCategories[$originalIcon] ?? [];
             $tags = $allTags[$originalIcon] ?? [];
 

@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['automobile', 'cab', 'call', 'car', 'cars', 'direction', 'local', 'lyft', 'maps', 'public', 'taxi', 'transportation', 'uber', 'vehicle', 'yellow'],
 )]
-final class LocalTaxiRoundedIcon extends SVG
+final class LocalTaxiRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

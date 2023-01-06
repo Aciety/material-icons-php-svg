@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['100', 'bill', 'card', 'cash', 'coin', 'commerce', 'cost', 'credit', 'currency', 'digit', 'dollars', 'finance', 'money', 'number', 'online', 'pay', 'payment', 'price', 'shopping', 'symbol'],
 )]
-final class MoneyIcon extends SVG
+final class MoneyIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

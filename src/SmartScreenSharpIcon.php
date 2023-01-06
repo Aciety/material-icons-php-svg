@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['hardware'],
     tags: ['Android', 'OS', 'airplay', 'cast', 'cell', 'connect', 'device', 'hardware', 'iOS', 'mobile', 'phone', 'screen', 'screencast', 'smart', 'stream', 'tablet', 'video'],
 )]
-final class SmartScreenSharpIcon extends SVG
+final class SmartScreenSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: '0', width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

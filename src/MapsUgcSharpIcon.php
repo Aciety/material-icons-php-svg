@@ -9,20 +9,18 @@ use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGPolygon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['+', 'add', 'bubble', 'comment', 'communicate', 'feedback', 'maps', 'message', 'new', 'plus', 'speech', 'symbol', 'ugc'],
 )]
-final class MapsUgcSharpIcon extends SVG
+final class MapsUgcSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: '0', width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $l0I0->setStyle('fill-rule', 'evenodd');
