@@ -28,6 +28,7 @@ final class IconBuilderTest extends TestCase
     {
         $svg = SVG::fromFile(__DIR__.'/../Fixtures/'.$srcFile);
 
+        self::assertNotNull($svg);
         self::assertStringEqualsFile(__DIR__.'/../Fixtures/build/'.$expectedFile, $this->builder->build($svg, basename($expectedFile, '.phpt'), $categories, $tags));
     }
 
@@ -82,6 +83,8 @@ final class IconBuilderTest extends TestCase
     public function testBuildFails(): void
     {
         $svg = SVG::fromFile(__DIR__.'/../Fixtures/custom.svg');
+
+        self::assertNotNull($svg);
 
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('Unsupported element "SVG\Nodes\Structures\SVGMask" found to build "CustomIcon" icon.');

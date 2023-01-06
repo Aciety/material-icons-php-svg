@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['arrow', 'back', 'backwards', 'find', 'glass', 'history', 'inprogress', 'load', 'loading', 'look', 'magnify', 'magnifying', 'refresh', 'renew', 'restore', 'reverse', 'rotate', 'search', 'see', 'yt'],
 )]
-final class YoutubeSearchedForRoundedIcon extends SVG
+final class YoutubeSearchedForRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0zm0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

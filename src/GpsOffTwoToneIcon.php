@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['device'],
     tags: ['destination', 'direction', 'disabled', 'enabled', 'gps', 'location', 'maps', 'not fixed', 'off', 'offline', 'on', 'place', 'pointer', 'slash', 'tracking'],
 )]
-final class GpsOffTwoToneIcon extends SVG
+final class GpsOffTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['av'],
     tags: ['add', 'approve', 'check', 'collection', 'complete', 'done', 'layers', 'library', 'mark', 'multiple', 'music', 'ok', 'select', 'stacked', 'tick', 'validate', 'verified', 'video', 'yes'],
 )]
-final class LibraryAddCheckTwoToneIcon extends SVG
+final class LibraryAddCheckTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGGroup();
         $l2I0 = new SVGPath(d: 'M8,16h12V4H8V16z M10.4,9.09l2.07,2.08L17.6,6L19,7.41L12.47,14L9,10.5L10.4,9.09z');

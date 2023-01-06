@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['approve', 'check', 'complete', 'document', 'done', 'feedback', 'grade', 'mark', 'ok', 'reviewed', 'select', 'star_boarder', 'star_border_purple500', 'star_outline', 'star_purple500', 'star_rate', 'tick', 'validate', 'verified', 'writing', 'yes'],
 )]
-final class GradingOutlinedIcon extends SVG
+final class GradingOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

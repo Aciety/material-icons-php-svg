@@ -9,20 +9,18 @@ use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['!', 'alert', 'attention', 'automobile', 'cab', 'car', 'cars', 'caution', 'danger', 'direction', 'error', 'exclamation', 'important', 'lyft', 'maps', 'mark', 'notification', 'public', 'symbol', 'taxi', 'transportation', 'uber', 'vehicle', 'warning', 'yellow'],
 )]
-final class TaxiAlertTwoToneIcon extends SVG
+final class TaxiAlertTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

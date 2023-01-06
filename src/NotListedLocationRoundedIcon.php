@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['?', 'assistance', 'destination', 'direction', 'help', 'info', 'information', 'listed', 'location', 'maps', 'not', 'pin', 'place', 'punctuation', 'question mark', 'stop', 'support', 'symbol'],
 )]
-final class NotListedLocationRoundedIcon extends SVG
+final class NotListedLocationRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

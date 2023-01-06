@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['automobile', 'bike', 'car', 'cars', 'direction', 'maps', 'motorcycle', 'public', 'scooter', 'sport', 'transportation', 'travel', 'two wheeler', 'vehicle'],
 )]
-final class TwoWheelerOutlinedIcon extends SVG
+final class TwoWheelerOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: '0', y: '0', width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

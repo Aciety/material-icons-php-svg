@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['analytics', 'assessment', 'bar', 'chart', 'data', 'diagram', 'graph', 'infographic', 'measure', 'metrics', 'statistics', 'tracking'],
 )]
-final class AnalyticsTwoToneIcon extends SVG
+final class AnalyticsTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: '5', y: '5', width: '14', height: '14');
         $l1I0->setStyle('opacity', '.3');

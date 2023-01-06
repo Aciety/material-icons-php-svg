@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['a', 'alphabet', 'approve', 'character', 'check', 'font', 'letter', 'mark', 'ok', 'processor', 'select', 'spell', 'spellcheck', 'symbol', 'text', 'tick', 'type', 'word', 'write', 'yes'],
 )]
-final class SpellcheckIcon extends SVG
+final class SpellcheckIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

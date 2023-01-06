@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['calendar', 'compose', 'create', 'date', 'day', 'draft', 'edit', 'editing', 'event', 'month', 'pen', 'pencil', 'schedule', 'write', 'writing'],
 )]
-final class EditCalendarSharpIcon extends SVG
+final class EditCalendarSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

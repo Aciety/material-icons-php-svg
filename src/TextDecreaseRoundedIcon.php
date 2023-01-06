@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['editor'],
     tags: ['-', 'alphabet', 'character', 'decrease', 'font', 'letter', 'minus', 'remove', 'resize', 'subtract', 'symbol', 'text', 'type'],
 )]
-final class TextDecreaseRoundedIcon extends SVG
+final class TextDecreaseRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

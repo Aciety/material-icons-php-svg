@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['agreement', 'contract', 'court', 'document', 'gavel', 'government', 'judge', 'law', 'mallet', 'official', 'police', 'rule', 'rules', 'terms'],
 )]
-final class GavelIcon extends SVG
+final class GavelIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: '0', y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

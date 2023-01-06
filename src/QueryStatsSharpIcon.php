@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['editor'],
     tags: ['analytics', 'chart', 'data', 'diagram', 'find', 'glass', 'graph', 'infographic', 'line', 'look', 'magnify', 'magnifying', 'measure', 'metrics', 'query', 'search', 'see', 'statistics', 'stats', 'tracking'],
 )]
-final class QueryStatsSharpIcon extends SVG
+final class QueryStatsSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

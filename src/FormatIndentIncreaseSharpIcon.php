@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['editor'],
     tags: ['align', 'alignment', 'doc', 'edit', 'editing', 'editor', 'format', 'increase', 'indent', 'indentation', 'paragraph', 'sheet', 'spreadsheet', 'text', 'type', 'writing'],
 )]
-final class FormatIndentIncreaseSharpIcon extends SVG
+final class FormatIndentIncreaseSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M3 21h18v-2H3v2zM3 8v8l4-4-4-4zm8 9h10v-2H11v2zM3 3v2h18V3H3zm8 6h10V7H11v2zm0 4h10v-2H11v2z');
         $doc->addChild($l0I0);
     }

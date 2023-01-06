@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['places'],
     tags: ['aromatherapy', 'flower', 'healthcare', 'leaf', 'massage', 'meditation', 'nature', 'petals', 'places', 'relax', 'spa', 'wellbeing', 'wellness'],
 )]
-final class SpaIcon extends SVG
+final class SpaIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0h24v24H0V0zm13.97 21.49c-.63.23-1.29.4-1.97.51.68-.12 1.33-.29 1.97-.51zM12 22c-.68-.12-1.33-.29-1.97-.51.64.22 1.29.39 1.97.51z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

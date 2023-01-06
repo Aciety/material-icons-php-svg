@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['places'],
     tags: ['building', 'door', 'doorway', 'entrance', 'home', 'house', 'interior', 'meeting', 'office', 'open', 'places', 'room'],
 )]
-final class MeetingRoomRoundedIcon extends SVG
+final class MeetingRoomRoundedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGGroup();
         $l2I0 = new SVGPath(d: 'M0,0h24v24H0V0z');

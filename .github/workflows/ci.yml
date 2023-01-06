@@ -1,6 +1,10 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
 
 jobs:
   php-cs-fixer:
@@ -14,11 +18,14 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.1"
-          tools: cs2pr, php-cs-fixer:3.13
+          tools: cs2pr
           coverage: 'none'
 
+      - name: "Install Dependencies with Composer"
+        uses: "ramsey/composer-install@v2"
+
       - name: "Run PHP-CS-Fixer"
-        run: php-cs-fixer fix -v --dry-run --format=checkstyle | cs2pr
+        run: vendor/bin/php-cs-fixer fix -v --dry-run --format=checkstyle | cs2pr
 
   phpstan:
     name: "PHPStan"

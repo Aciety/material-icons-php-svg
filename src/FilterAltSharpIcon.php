@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['alt', 'edit', 'filter', 'funnel', 'options', 'refine', 'sift'],
 )]
-final class FilterAltSharpIcon extends SVG
+final class FilterAltSharpIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGPath(d: 'M0,0h24 M24,24H0');
         $l1I0->setStyle('fill', 'none');

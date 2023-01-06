@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['navigation'],
     tags: ['arrow', 'arrows', 'chevron', 'collapse', 'direction', 'expand', 'expandable', 'inward', 'less', 'list', 'navigation', 'unfold', 'up'],
 )]
-final class UnfoldLessOutlinedIcon extends SVG
+final class UnfoldLessOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M24 0v24H0V0h24z');
         $l0I0->setStyle('fill', 'none');
         $l0I0->setStyle('opacity', '.87');

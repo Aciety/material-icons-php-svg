@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['social'],
     tags: ['agreed', 'approved', 'confirm', 'correct', 'favorite', 'feedback', 'good', 'happy', 'like', 'okay', 'positive', 'satisfaction', 'social', 'thumb', 'up', 'vote', 'yes'],
 )]
-final class ThumbUpAltIcon extends SVG
+final class ThumbUpAltIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M24 24H0V0h24v24z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);

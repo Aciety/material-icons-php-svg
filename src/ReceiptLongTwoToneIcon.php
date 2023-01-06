@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['image'],
     tags: ['bill', 'check', 'document', 'list', 'long', 'paper', 'paperwork', 'receipt', 'record', 'store', 'transaction'],
 )]
-final class ReceiptLongTwoToneIcon extends SVG
+final class ReceiptLongTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M19,19c0,0.55-0.45,1-1,1s-1-0.45-1-1v-3H8V5h11V19z');
         $l0I0->setStyle('opacity', '.3');
         $doc->addChild($l0I0);

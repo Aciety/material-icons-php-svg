@@ -13,20 +13,18 @@ use SVG\Nodes\Structures\SVGClipPath;
 use SVG\Nodes\Structures\SVGDefs;
 use SVG\Nodes\Structures\SVGGroup;
 use SVG\Nodes\Structures\SVGUse;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['device'],
     tags: ['+', 'bottle', 'doctor', 'drug', 'health', 'hospital', 'liquid', 'medications', 'medicine', 'pharmacy', 'spoon', 'vessel'],
 )]
-final class MedicationLiquidTwoToneIcon extends SVG
+final class MedicationLiquidTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: null, y: null, width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

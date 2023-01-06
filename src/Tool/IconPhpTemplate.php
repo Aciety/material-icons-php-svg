@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Aciety\Component\MaterialIcons\Tool;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
-use SVG\SVG;
 
 use function array_keys;
 use function array_map;
@@ -21,7 +20,6 @@ final class IconPhpTemplate
      */
     private array $uses = [
         MaterialIcon::class => 1,
-        SVG::class => 1,
     ];
 
     /**
@@ -87,7 +85,7 @@ USES
     categories: [CATEGORIES],
     tags: [TAGS],
 )]
-final class ICON extends SVG
+final class ICON extends SvgIcon
 {
     public function __construct()
     {

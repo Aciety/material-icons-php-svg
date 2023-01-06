@@ -37,7 +37,6 @@ final class IconBuilder
     {
         $template = new IconPhpTemplate($iconName, $categories, $tags);
         $template->addCall('$doc = $this->getDocument();');
-        $template->addCall('$doc->setAttribute(\'viewBox\', \'0 0 24 24\');');
 
         self::inlineSvg($template, $iconName, self::getDirectSvgChildren($svg->getDocument()), 0, '$doc');
 

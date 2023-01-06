@@ -6,20 +6,18 @@ namespace Aciety\Component\MaterialIcons;
 
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['alert'],
     tags: ['!', 'active', 'alarm', 'alert', 'attention', 'bell', 'caution', 'chime', 'danger', 'error', 'exclamation', 'important', 'mark', 'notification', 'notifications', 'notify', 'reminder', 'ring', 'sound', 'symbol', 'warning'],
 )]
-final class NotificationImportantTwoToneIcon extends SVG
+final class NotificationImportantTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M12 6c-2.76 0-5 2.24-5 5v7h10v-7c0-2.76-2.24-5-5-5zm1 10h-2v-2h2v2zm0-4h-2V8h2v4z');
         $l0I0->setStyle('opacity', '.3');
         $doc->addChild($l0I0);

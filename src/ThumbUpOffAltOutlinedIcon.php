@@ -8,20 +8,18 @@ use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Shapes\SVGRect;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['action'],
     tags: ['[offline]', 'alt', 'disabled', 'enabled', 'favorite', 'fingers', 'gesture', 'hand', 'hands', 'like', 'off', 'on', 'rank', 'ranking', 'rate', 'rating', 'slash', 'thumb', 'up'],
 )]
-final class ThumbUpOffAltOutlinedIcon extends SVG
+final class ThumbUpOffAltOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGRect(x: '0', y: '0', width: '24', height: '24');
         $l1I0->setStyle('fill', 'none');

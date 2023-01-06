@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['places'],
     tags: ['bolt', 'camera', 'disabled', 'enabled', 'flash', 'image', 'lightning', 'no', 'off', 'on', 'photo', 'photography', 'picture', 'slash', 'thunderbolt'],
 )]
-final class NoFlashTwoToneIcon extends SVG
+final class NoFlashTwoToneIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGPath(d: 'M13.42,16.24l2.55,2.55L15.96,20H4v-8.6h3.02l0.59-0.65l0.15-0.16l1.5,1.5C7.68,12.43,6.5,13.82,6.5,15.5 c0,1.93,1.57,3.5,3.5,3.5C11.68,19,13.07,17.82,13.42,16.24z M16,13.17l0-1.77h-1.77L16,13.17z');
         $l1I0->setStyle('opacity', '.3');

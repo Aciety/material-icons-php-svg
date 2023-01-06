@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGPath;
 use SVG\Nodes\Structures\SVGGroup;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['navigation'],
     tags: ['analytics', 'arrow', 'arrows', 'bar', 'bars', 'chart', 'data', 'diagram', 'direction', 'drive', 'edit', 'editing', 'graph', 'grid', 'infographic', 'measure', 'metrics', 'pivot', 'rotate', 'sheet', 'statistics', 'table', 'tracking'],
 )]
-final class PivotTableChartOutlinedIcon extends SVG
+final class PivotTableChartOutlinedIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGGroup();
         $l1I0 = new SVGPath(d: 'M0,0h24v24H0V0z');
         $l1I0->setStyle('fill', 'none');

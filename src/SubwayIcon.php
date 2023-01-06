@@ -7,20 +7,18 @@ namespace Aciety\Component\MaterialIcons;
 use Aciety\Component\MaterialIcons\Attribute\MaterialIcon;
 use SVG\Nodes\Shapes\SVGCircle;
 use SVG\Nodes\Shapes\SVGPath;
-use SVG\SVG;
 
 #[MaterialIcon(
     categories: ['maps'],
     tags: ['automobile', 'bike', 'car', 'cars', 'maps', 'rail', 'scooter', 'subway', 'train', 'transportation', 'travel', 'tunnel', 'underground', 'vehicle', 'vespa'],
 )]
-final class SubwayIcon extends SVG
+final class SubwayIcon extends SvgIcon
 {
     public function __construct()
     {
         parent::__construct();
 
         $doc = $this->getDocument();
-        $doc->setAttribute('viewBox', '0 0 24 24');
         $l0I0 = new SVGPath(d: 'M0 0v24h24V0H0zm22 22H2V8.86C2 6.05 3.53 3.84 6.2 2.8 8 2.09 10.14 2 12 2c1.86 0 4 .09 5.8.8C20.47 3.84 22 6.05 22 8.86V22z');
         $l0I0->setStyle('fill', 'none');
         $doc->addChild($l0I0);
