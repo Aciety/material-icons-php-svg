@@ -16,7 +16,7 @@ final class Composer
 {
     public static function cleanup(
         Event $event,
-        Filesystem $filesystem = null,
+        ?Filesystem $filesystem = null,
     ): void {
         $composer = $event->getComposer();
         $extra = $composer->getPackage()->getExtra();

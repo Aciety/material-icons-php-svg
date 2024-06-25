@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Aciety\Component\MaterialIcons\Tests\Tool;
 
 use Aciety\Component\MaterialIcons\Tool\IconBuilder;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use SVG\SVG;
@@ -21,21 +22,20 @@ final class IconBuilderTest extends TestCase
     /**
      * @param list<non-empty-string> $categories
      * @param list<non-empty-string> $tags
-     *
-     * @dataProvider provideTestCases
      */
+    #[DataProvider('provideTestCases')]
     public function testBuild(string $srcFile, array $categories, array $tags, string $expectedFile): void
     {
         $svg = SVG::fromFile(__DIR__.'/../Fixtures/'.$srcFile);
 
-        self::assertNotNull($svg);
-        self::assertStringEqualsFile(__DIR__.'/../Fixtures/build/'.$expectedFile, $this->builder->build($svg, basename($expectedFile, '.phpt'), $categories, $tags));
+        $this->assertNotNull($svg);
+        $this->assertStringEqualsFile(__DIR__.'/../Fixtures/build/'.$expectedFile, $this->builder->build($svg, basename($expectedFile, '.phpt'), $categories, $tags));
     }
 
     /**
      * @return iterable<array{srcFile: non-empty-string, categories: list<non-empty-string>, tags: list<non-empty-string>, expectedFile: non-empty-string}>
      */
-    public function provideTestCases(): iterable
+    public static function provideTestCases(): iterable
     {
         yield [
             'srcFile' => 'abc_24px.svg',
@@ -84,7 +84,7 @@ final class IconBuilderTest extends TestCase
     {
         $svg = SVG::fromFile(__DIR__.'/../Fixtures/custom.svg');
 
-        self::assertNotNull($svg);
+        $this->assertNotNull($svg);
 
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('Unsupported element "SVG\Nodes\Structures\SVGMask" found to build "CustomIcon" icon.');

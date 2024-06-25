@@ -13,6 +13,7 @@ use Composer\Script\Event;
 use org\bovigo\vfs\vfsStreamDirectory;
 use org\bovigo\vfs\vfsStreamFile;
 use org\bovigo\vfs\vfsStreamWrapper;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 final class ComposerTest extends TestCase
@@ -44,34 +45,33 @@ final class ComposerTest extends TestCase
     }
 
     /**
-     * @param array{'aciety/material-icons'?: array{exclude?: list<string>}} $extra
+     * @param array{"aciety/material-icons"?: array{exclude?: list<string>}} $extra
      * @param list<string>                                                   $expectedFiles
-     *
-     * @dataProvider provideTestCases
      */
+    #[DataProvider('provideTestCases')]
     public function testCleanup(array $extra, array $expectedFiles, ?string $expectedIoWrite): void
     {
         $rootPackage = $this->createMock(RootPackage::class);
-        $rootPackage->expects(self::once())
+        $rootPackage->expects($this->once())
             ->method('getExtra')
             ->willReturn($extra);
 
         $config = $this->createMock(Config::class);
-        $config->expects(self::any())
+        $config->expects($this->any())
             ->method('get')
             ->with('vendor-dir')
             ->willReturn($this->vendorDir);
 
         $composer = $this->createMock(Composer::class);
-        $composer->expects(self::once())
+        $composer->expects($this->once())
             ->method('getPackage')
             ->willReturn($rootPackage);
-        $composer->expects(self::any())
+        $composer->expects($this->any())
             ->method('getConfig')
             ->willReturn($config);
 
         $io = $this->createMock(IOInterface::class);
-        $io->expects($expectedIoWrite !== null ? self::once() : self::never())
+        $io->expects($expectedIoWrite !== null ? $this->once() : $this->never())
             ->method('write')
             ->with($expectedIoWrite);
 
@@ -80,14 +80,14 @@ final class ComposerTest extends TestCase
         ComposerScript::cleanup($event);
 
         foreach ($expectedFiles as $file) {
-            self::assertTrue($this->srcDir->hasChild($file));
+            $this->assertTrue($this->srcDir->hasChild($file));
         }
     }
 
     /**
-     * @return iterable<array{extra: array{'aciety/material-icons'?: array{exclude?: list<string>}}, expectedFiles: list<string>, expectedIoWrite: string|null}>
+     * @return iterable<array{extra: array{"aciety/material-icons"?: array{exclude?: list<string>}}, expectedFiles: list<string>, expectedIoWrite: string|null}>
      */
-    public function provideTestCases(): iterable
+    public static function provideTestCases(): iterable
     {
         yield [
             'extra' => [],
