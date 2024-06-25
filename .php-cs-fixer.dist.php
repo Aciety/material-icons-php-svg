@@ -9,6 +9,7 @@ $finder = (new PhpCsFixer\Finder())
     ->notName('*Icon.php');
 
 return (new PhpCsFixer\Config())
+    ->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
     ->setRiskyAllowed(true)
     ->setRules([
         '@Symfony' => true,
@@ -34,7 +35,7 @@ return (new PhpCsFixer\Config())
         ],
         'phpdoc_tag_casing' => true,
         'phpdoc_to_comment' => ['ignored_tags' => ['var']],
-        'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
+        'php_unit_test_case_static_method_calls' => ['call_type' => 'this'],
         'php_unit_strict' => false,
         'yoda_style' => false,
         'static_lambda' => true,

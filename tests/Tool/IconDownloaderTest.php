@@ -31,7 +31,7 @@ final class IconDownloaderTest extends TestCase
         vfsStreamWrapper::setRoot(new vfsStreamDirectory('material-icons'));
 
         $directory = vfsStream::url('material-icons');
-        self::assertNotEmpty($directory);
+        $this->assertNotEmpty($directory);
         $this->directory = $directory;
         $this->httpClient = new MockHttpClient();
         $this->downloader = new IconDownloader($this->httpClient);
@@ -100,15 +100,15 @@ final class IconDownloaderTest extends TestCase
         ];
 
         foreach ($expectedFiles as $expectedFile) {
-            self::assertFileExists($this->directory.'/'.$expectedFile);
-            self::assertXmlFileEqualsXmlFile($this->directory.'/'.$expectedFile, __DIR__.'/../Fixtures/'.$expectedFile);
+            $this->assertFileExists($this->directory.'/'.$expectedFile);
+            $this->assertXmlFileEqualsXmlFile($this->directory.'/'.$expectedFile, __DIR__.'/../Fixtures/'.$expectedFile);
         }
 
-        self::assertFileExists($this->directory.'/_categories.json');
-        self::assertJsonFileEqualsJsonFile($this->directory.'/_categories.json', __DIR__.'/../Fixtures/_categories.json');
+        $this->assertFileExists($this->directory.'/_categories.json');
+        $this->assertJsonFileEqualsJsonFile($this->directory.'/_categories.json', __DIR__.'/../Fixtures/_categories.json');
 
-        self::assertFileExists($this->directory.'/_tags.json');
-        self::assertJsonFileEqualsJsonFile($this->directory.'/_tags.json', __DIR__.'/../Fixtures/_tags.json');
+        $this->assertFileExists($this->directory.'/_tags.json');
+        $this->assertJsonFileEqualsJsonFile($this->directory.'/_tags.json', __DIR__.'/../Fixtures/_tags.json');
     }
 
     public function testDownloadFail(): void

@@ -51,6 +51,6 @@ final class MuiFilenameRewriterTest extends TestCase
      */
     public function testRename(string $filename, string $expectedFilename): void
     {
-        self::assertSame($expectedFilename, $this->rewriter->rewrite(new SplFileInfo($filename)));
+        $this->assertSame($expectedFilename, $this->rewriter->rewrite(new SplFileInfo($filename)));
     }
 }
